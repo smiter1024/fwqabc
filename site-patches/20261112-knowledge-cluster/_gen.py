@@ -430,7 +430,7 @@ DOM_BODY = f"""
 <li>IPinfo 页面标题为 “AS4809 China Telecom Next Generation Carrier Network”，页面中可见 WHOIS 网络名 CHINATELECOM-CORE-WAN-CN2、描述 China Telecom Next Generation Carrier Network。</li>
 <li>PeeringDB 将 AS4809 登记为 “China Telecom / CN2”。</li>
 </ul>
-<p>判断框架的短页是 <a href="/knowledge/cn2-gia/">CN2 GIA：先看适不适合</a>，完整说明仍在 <a href="/routes/cn2-gia/">原线路页</a>。本文不另写一套定义。</p>
+<p>简要说明见 <a href="/knowledge/cn2-gia/">CN2 GIA：是否适用</a>，完整说明见 <a href="/routes/cn2-gia/">CN2 GIA 线路页</a>。</p>
 
 {heading("h2", "该不该上：先对照访客，而不是对照身份")}
 {table(
@@ -574,7 +574,7 @@ PREM_BODY = f"""
          "页面没有把 CMIN2 写成对电信或联通同样更优，也没有速度实测"],
     ],
 )}
-<p>短判断页见 <a href="/knowledge/cn2-gia/">CN2 GIA：先看适不适合</a>、<a href="/knowledge/as9929/">AS9929：先看适不适合</a>、<a href="/knowledge/cmin2/">CMIN2：先看适不适合</a>。详细正文仍在原线路页，本文不复制那段文字。</p>
+<p>短判断页见 <a href="/knowledge/cn2-gia/">CN2 GIA：是否适用</a>、<a href="/knowledge/as9929/">AS9929：是否适用</a>、<a href="/knowledge/cmin2/">CMIN2：是否适用</a>。详细说明见各线路页。</p>
 
 {heading("h2", "什么时候值得看，什么时候不必先看")}
 {table(
@@ -760,7 +760,7 @@ ARTICLES.extend([
             (f"{SITE}/knowledge/chuhai-independent-site-server/", "出海独立站怎么选服务器", DATE_VISIBLE),
             (f"{SITE}/knowledge/premium-line-when/", "独立站要不要上精品线路", DATE_VISIBLE),
             (f"{SITE}/knowledge/overseas-visitors-server/", "独立站访客主要在海外时，服务器怎么选", DATE_VISIBLE),
-            (f"{SITE}/knowledge/cn2-gia/", "CN2 GIA：先看适不适合", ""),
+            (f"{SITE}/knowledge/cn2-gia/", "CN2 GIA：是否适用", ""),
             (f"{SITE}/routes/cn2-gia/", "CN2 GIA 线路页", ""),
         ],
         tags=[("/tags/%E5%A4%96%E8%B4%B8%E7%8B%AC%E7%AB%8B%E7%AB%99/", "外贸独立站")],
@@ -810,7 +810,7 @@ ARTICLES.extend([
         related=[
             (f"{SITE}/knowledge/chuhai-independent-site-server/", "出海独立站怎么选服务器", DATE_VISIBLE),
             (f"{SITE}/knowledge/domestic-visitors-cn2/", "国内访客为主，独立站该不该上 CN2", DATE_VISIBLE),
-            (f"{SITE}/knowledge/cn2-gia/", "CN2 GIA：先看适不适合", ""),
+            (f"{SITE}/knowledge/cn2-gia/", "CN2 GIA：是否适用", ""),
             (f"{SITE}/routes/cn2-gia/", "CN2 GIA 线路页", ""),
             (f"{SITE}/routes/9929/", "9929 线路页", ""),
             (f"{SITE}/routes/cmin2/", "CMIN2 线路页", ""),

@@ -393,18 +393,16 @@ def table(rows, lang, cols):
 
 
 CTA_ZH = '''<div class="service-cta">
-<p>如需咨询，请通过电子邮件或微信联系。</p>
 <p>邮箱：<a href="mailto:chuhaiABC@outlook.com?subject=%E5%92%A8%E8%AF%A2%E6%B5%B7%E5%A4%96%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C">chuhaiABC@outlook.com</a></p>
 <p><a class="service-cta-btn" href="mailto:chuhaiABC@outlook.com?subject=%E5%92%A8%E8%AF%A2%E6%B5%B7%E5%A4%96%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C">发送邮件</a></p>
-<p>微信：出海ABC（四川成都）。请扫描下方二维码添加。本页不另公布文字微信号。</p>
+<p>微信：出海ABC（四川成都）。</p>
 <p><img src=/images/contact/wechat.jpg alt="出海ABC 微信二维码" width=280 height=381></p>
 </div>'''
 
 CTA_EN = '''<div class="service-cta">
-<p>For inquiries, please write by email or add the WeChat account.</p>
 <p>Email: <a href="mailto:chuhaiABC@outlook.com?subject=Overseas%20company%20registration">chuhaiABC@outlook.com</a></p>
 <p><a class="service-cta-btn" href="mailto:chuhaiABC@outlook.com?subject=Overseas%20company%20registration">Email</a></p>
-<p>WeChat: 出海ABC (Chengdu, Sichuan). Please scan the code below to add the account. A text WeChat ID is not published on this page.</p>
+<p>WeChat: 出海ABC (Chengdu, Sichuan).</p>
 <p><img src=/images/contact/wechat.jpg alt="出海ABC WeChat QR code" width=280 height=381></p>
 </div>'''
 
