@@ -79,9 +79,9 @@ def rewrite_note(s: str) -> str:
 
 # --- popular 11 remain as previously drafted (建议报价, CNY) ---
 
-POPULAR_ZH = r'''<h2 id="用户报价">美国热门州用户报价<a hidden class="anchor" aria-hidden="true" href="#用户报价">#</a></h2>
-<p class="quote-included">下列用户报价默认包含：注册、首年州政府费用、首年代理服务、联邦税号 EIN、代理地址 12 个月及政府信件代收扫描，以及可在州政府核查的全套资料（默认 PDF 交付）。美国如需纸质资料和公章，另加 200 元。报价不含良好证明；需要的，请另询。</p>
-<p class="quote-asof">本表金额为人民币，仅供参考，以确认时的价格为准。</p>
+POPULAR_ZH = r'''<h2 id="用户报价">美国常用州用户报价<a hidden class="anchor" aria-hidden="true" href="#用户报价">#</a></h2>
+<p class="quote-included">下列用户报价默认包含：注册、首年州政府费用、首年代理服务、联邦税号 EIN、代理地址 12 个月及政府信件代收与扫描，以及可在州政府核查的全套资料（默认以 PDF 交付）。如需纸质文件及公司印章，另计 200 元。报价不含良好证明；如需办理，请另行询价。</p>
+<p class="quote-asof">本表金额以人民币计，供参考，以书面确认价格为准。</p>
 <div class="quote-table-wrap">
 <table class="quote-table">
 <thead>
@@ -98,12 +98,12 @@ POPULAR_ZH = r'''<h2 id="用户报价">美国热门州用户报价<a hidden clas
 <tr><td>新泽西 NJ</td><td class="price">3500 元</td><td>1–3 个工作日</td><td class="fee">1400 元</td><td class="note">报价说明写明每年基本州税 500 美元起，以官方为准。</td></tr>
 <tr><td>内华达 NV</td><td class="price">INC 9800 元<br>LLC 7500 元</td><td>3–5 个工作日</td><td class="fee">LLC 4000 元<br>INC 6000 元</td><td class="note">含 business license。</td></tr>
 <tr><td>佛罗里达 FL</td><td class="price">LLC 3500 元<br>INC 3000 元</td><td>5–10 个工作日</td><td class="fee">2100 元</td><td class="note"></td></tr>
-<tr><td>纽约 NY</td><td class="price">INC 3000 元<br>LLC 3900 元<br>州外备案 INC 3900 元 / LLC 4200 元（约 4–6 周）</td><td>1–3 个工作日</td><td class="fee">1000 元</td><td class="note">报价说明写明每年特许税 25 美元起，以官方为准。纽约 LLC 通常需要登报，约 5000 元起，一般不建议办 LLC，可改问 INC 或其他州。</td></tr>
+<tr><td>纽约 NY</td><td class="price">INC 3000 元<br>LLC 3900 元<br>州外备案 INC 3900 元 / LLC 4200 元（约 4–6 周）</td><td>1–3 个工作日</td><td class="fee">1000 元</td><td class="note">报价说明写明每年特许税 25 美元起，以官方为准。纽约州 LLC 通常须办理登报，费用约 5000 元起，一般不作为首选，可咨询 INC 或其他州。</td></tr>
 </tbody>
 </table>
 </div>
-<h2 id="后续费用">这些州的后续费用<a hidden class="anchor" aria-hidden="true" href="#后续费用">#</a></h2>
-<p class="quote-asof">以下为上述州的后续费用参考，单位人民币，以确认时为准。转入承办供应商代理时，费用为转入费加代理人续费。</p>
+<h2 id="后续费用">上述各州后续费用<a hidden class="anchor" aria-hidden="true" href="#后续费用">#</a></h2>
+<p class="quote-asof">以下为上述各州后续费用的参考金额，以人民币计，以书面确认为准。若转入承办供应商代理，费用为转入费与代理人续费之和。</p>
 <div class="quote-table-wrap">
 <table class="quote-table">
 <thead>
@@ -124,12 +124,12 @@ POPULAR_ZH = r'''<h2 id="用户报价">美国热门州用户报价<a hidden clas
 </tbody>
 </table>
 </div>
-<p class="quote-fn">加州变更（参考）：由承办供应商注册的公司，变地址、法人或经营范围 1000 元；章程变更（含股份数、公司名、LLC 管理类型）2000 元；变更类型 2500 元。非该供应商注册的公司，变地址、法人或经营范围 1000 元（需授权）；章程变更 2500 元；变更类型 3500 元。取消原授权 1000 元；线下改地址 1500 元。</p>
-<p class="quote-fn">纽约变更参考时效约 2–4 周。部分注销如需税务结清，全部完成可能更久，以确认时说明为准。</p>
+<p class="quote-fn">加州变更（参考）：由承办供应商注册的公司，变更地址、法定代表人或经营范围 1000 元；章程变更（含股份数、公司名称、LLC 管理类型）2000 元；变更类型 2500 元。非由该供应商注册的公司，变更地址、法定代表人或经营范围 1000 元（须取得授权）；章程变更 2500 元；变更类型 3500 元。取消原授权 1000 元；现场变更地址 1500 元。</p>
+<p class="quote-fn">纽约州变更的参考时效约为 2–4 周。部分注销如需完成税务清算，全部办结时间可能更长，以书面确认时的说明为准。</p>
 '''
 
-POPULAR_EN = r'''<h2 id="user-quotes">User quotes for popular US states<a hidden class="anchor" aria-hidden="true" href="#user-quotes">#</a></h2>
-<p class="quote-included">Unless a row says otherwise, each user quote below includes formation, the first year’s state government fee, the first year’s registered-agent service, a federal EIN, a registered address for 12 months with scanning of government mail, and a full document set that can be checked with the state (PDF by default). Paper documents and a company seal for a US filing add RMB 200. A certificate of good standing is not included; ask if you need one.</p>
+POPULAR_EN = r'''<h2 id="user-quotes">User quotes for commonly used US states<a hidden class="anchor" aria-hidden="true" href="#user-quotes">#</a></h2>
+<p class="quote-included">Unless a row says otherwise, each user quote below includes formation, the first year’s state government fee, the first year’s registered-agent service, a federal EIN, a registered address for 12 months with scanning of government mail, and a full document set that can be checked with the state (PDF by default). Paper documents and a company seal for a US filing add RMB 200. A certificate of good standing is not included; it may be requested separately.</p>
 <p class="quote-asof">Amounts in this table are in renminbi. They are a reference only and are confirmed in writing at the time of engagement.</p>
 <div class="quote-table-wrap">
 <table class="quote-table">
@@ -147,7 +147,7 @@ POPULAR_EN = r'''<h2 id="user-quotes">User quotes for popular US states<a hidden
 <tr><td>New Jersey NJ</td><td class="price">RMB 3,500</td><td>1–3 business days</td><td class="fee">RMB 1,400</td><td class="note">The quote notes say a state tax from USD 500 a year; official rules prevail.</td></tr>
 <tr><td>Nevada NV</td><td class="price">INC RMB 9,800<br>LLC RMB 7,500</td><td>3–5 business days</td><td class="fee">LLC RMB 4,000<br>INC RMB 6,000</td><td class="note">Includes a business license.</td></tr>
 <tr><td>Florida FL</td><td class="price">LLC RMB 3,500<br>INC RMB 3,000</td><td>5–10 business days</td><td class="fee">RMB 2,100</td><td class="note"></td></tr>
-<tr><td>New York NY</td><td class="price">INC RMB 3,000<br>LLC RMB 3,900<br>Foreign qualification INC RMB 3,900 / LLC RMB 4,200 (about 4–6 weeks)</td><td>1–3 business days</td><td class="fee">RMB 1,000</td><td class="note">The quote notes say a franchise tax from USD 25 a year; official rules prevail. A New York LLC usually requires publication, from about RMB 5,000, and is generally not suggested. Ask about an INC, or another state.</td></tr>
+<tr><td>New York NY</td><td class="price">INC RMB 3,000<br>LLC RMB 3,900<br>Foreign qualification INC RMB 3,900 / LLC RMB 4,200 (about 4–6 weeks)</td><td>1–3 business days</td><td class="fee">RMB 1,000</td><td class="note">The quote notes say a franchise tax from USD 25 a year; official rules prevail. A New York LLC usually requires publication, from about RMB 5,000, and is generally not a first choice. An INC or another state may be discussed instead.</td></tr>
 </tbody>
 </table>
 </div>
@@ -174,7 +174,7 @@ POPULAR_EN = r'''<h2 id="user-quotes">User quotes for popular US states<a hidden
 </table>
 </div>
 <p class="quote-fn">California changes (reference): for a company formed by the fulfilling supplier, a change of address, officer, or business scope is RMB 1,000; an articles change (shares, name, or LLC management type) is RMB 2,000; a type change is RMB 2,500. For a company not formed by that supplier, a change of address, officer, or business scope is RMB 1,000 (authorization required); an articles change is RMB 2,500; a type change is RMB 3,500. Cancelling a prior authorization is RMB 1,000; an in-person address change is RMB 1,500.</p>
-<p class="quote-fn">New York changes typically take about 2–4 weeks. Some dissolutions that need tax clearance can take longer. The written confirmation is what counts.</p>
+<p class="quote-fn">New York changes typically take about 2–4 weeks. Some dissolutions that need tax clearance can take longer. The written confirmation is authoritative.</p>
 '''
 
 
@@ -325,7 +325,7 @@ ADDONS = [
     row("EIN（非美国公司申请）", "EIN (non-US company)", "700 元", "RMB 700", "2–4 周", "2–4 weeks", "—", "—"),
     row("年 BOND（5 万美元额度）", "Annual bond (USD 50,000 limit)", "900 美元", "USD 900", "7–10 个工作日", "7–10 business days", "—", "—",
         "本项按美元报价。不含 IOR 注册；如需办理，费用另加，以确认为准。",
-        "Quoted in US dollars. An IOR registration is not included; ask if you need it."),
+        "Quoted in US dollars. An IOR registration is not included and may be requested separately."),
     row("GLN 码", "GLN code", "1000 元", "RMB 1,000", "3–5 个工作日", "3–5 business days", "—", "—", "长期有效 1 个。", "One code, long-term validity."),
     row("美国 MSB 金融牌照", "US MSB licence", "2200 元", "RMB 2,200", "10–15 个工作日", "10–15 business days", "—", "—"),
     row("加拿大 MSB 牌照", "Canada MSB licence", "5100 美元", "USD 5,100", "顺利约 4–5 个月，较慢约 10–12 个月",
@@ -393,31 +393,31 @@ def table(rows, lang, cols):
 
 
 CTA_ZH = '''<div class="service-cta">
-<p>咨询请发邮件或添加微信。</p>
+<p>如需咨询，请通过电子邮件或微信联系。</p>
 <p>邮箱：<a href="mailto:chuhaiABC@outlook.com?subject=%E5%92%A8%E8%AF%A2%E6%B5%B7%E5%A4%96%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C">chuhaiABC@outlook.com</a></p>
-<p><a class="service-cta-btn" href="mailto:chuhaiABC@outlook.com?subject=%E5%92%A8%E8%AF%A2%E6%B5%B7%E5%A4%96%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C">发邮件咨询</a></p>
-<p>微信：出海ABC（四川成都）。扫码添加。这里没有单独的文字微信号。</p>
+<p><a class="service-cta-btn" href="mailto:chuhaiABC@outlook.com?subject=%E5%92%A8%E8%AF%A2%E6%B5%B7%E5%A4%96%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C">发送邮件</a></p>
+<p>微信：出海ABC（四川成都）。请扫描下方二维码添加。本页不另公布文字微信号。</p>
 <p><img src=/images/contact/wechat.jpg alt="出海ABC 微信二维码" width=280 height=381></p>
 </div>'''
 
 CTA_EN = '''<div class="service-cta">
-<p>To inquire, email us or add the WeChat account.</p>
+<p>For inquiries, please write by email or add the WeChat account.</p>
 <p>Email: <a href="mailto:chuhaiABC@outlook.com?subject=Overseas%20company%20registration">chuhaiABC@outlook.com</a></p>
-<p><a class="service-cta-btn" href="mailto:chuhaiABC@outlook.com?subject=Overseas%20company%20registration">Send an email</a></p>
-<p>WeChat: 出海ABC (Chengdu, Sichuan). Scan the card to add the account. There is no separate text WeChat ID.</p>
+<p><a class="service-cta-btn" href="mailto:chuhaiABC@outlook.com?subject=Overseas%20company%20registration">Email</a></p>
+<p>WeChat: 出海ABC (Chengdu, Sichuan). Please scan the code below to add the account. A text WeChat ID is not published on this page.</p>
 <p><img src=/images/contact/wechat.jpg alt="出海ABC WeChat QR code" width=280 height=381></p>
 </div>'''
 
 DESC_ZH = (
-    "出海第一步：先立主体。本页公布海外公司注册及常见配套的用户报价，银行开户等项目可询价。"
-    "出海ABC提供对接服务，先核对报价和需求，再由具备相应资质和牌照的承办供应商受理办理。"
-    "费用请直接付给该供应商，护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。"
+    "出海第一步是设立公司主体。本页公布海外公司注册及常见配套项目的用户报价，银行开户等项目可询价。"
+    "出海ABC提供对接服务，先行核对报价与需求，再由具备相应资质和牌照的承办供应商受理办理。"
+    "服务费用请直接支付予承办供应商。护照及身份证件须通过该供应商的正式渠道提交。本站不代收款项，亦不在网页收集或留存证件资料。"
 )
 DESC_EN = (
-    "Step 1 of going overseas: set up a company. This page publishes user quotes for overseas company registration and common add-ons. "
-    "Bank accounts and some other items are by inquiry. 出海ABC provides the coordination: we review the quote and your needs first, "
-    "then a licensed fulfilling supplier accepts and handles the filing. Please pay that supplier directly, and submit passports or identity documents "
-    "through the supplier’s official process. This site does not collect payment or keep identity documents on the page."
+    "The first step in going overseas is to establish a company. This page publishes user quotes for overseas company registration and common related services. "
+    "Bank accounts and certain other items are available on inquiry. 出海ABC provides coordination: the quote and requirements are reviewed first, "
+    "then a licensed fulfilling supplier accepts and completes the filing. Fees should be paid directly to that supplier, and passports or identity documents "
+    "should be submitted through the supplier’s official process. This site does not collect payment or retain identity documents on the page."
 )
 
 
@@ -426,67 +426,67 @@ def build_zh() -> str:
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg>
 <a href=/services/>出海服务</a>
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg></nav><h1 class="post-title entry-hint-parent">海外公司注册</h1><div class="post-description">''' + DESC_ZH + '''</div><div class="post-meta"><span>语言:</span><ul class="i18n_list"><li><a href=https://fwqabc.com/en/services/overseas-company/>En</a></li></ul></div></header><details class="toc" open><summary accesskey=c title="(Alt + C)"><span class="title">目录</span></summary><div class="inner"><ul>
-<li><a href="#用户报价" aria-label="美国热门州用户报价">美国热门州用户报价</a></li>
-<li><a href="#后续费用" aria-label="这些州的后续费用">这些州的后续费用</a></li>
+<li><a href="#用户报价" aria-label="美国常用州用户报价">美国常用州用户报价</a></li>
+<li><a href="#后续费用" aria-label="上述各州后续费用">上述各州后续费用</a></li>
 <li><a href="#美国其他州" aria-label="美国其他州用户报价">美国其他州用户报价</a></li>
 <li><a href="#其他地区" aria-label="香港及其他地区">香港及其他地区</a></li>
 <li><a href="#配套服务" aria-label="配套服务">配套服务</a></li>
-<li><a href="#所需材料" aria-label="先准备这些材料">先准备这些材料</a></li>
+<li><a href="#所需材料" aria-label="所需材料">所需材料</a></li>
 <li><a href="#联系咨询" aria-label="联系咨询">联系咨询</a></li>
 <li><a href="#报价说明" aria-label="报价说明">报价说明</a></li>
 <li><a href="#常见问题" aria-label="常见问题">常见问题</a></li>
 </ul></div></details><div class="post-content md-content">'''
     body = f'''<div class="role-notice">
-<p>出海ABC提供海外公司注册的对接服务。我们先帮您核对报价、沟通需求，再由具备相应资质和牌照的承办供应商受理办理。本页报价公开，方便比较和核对。</p>
-<p class="role-sub">费用请直接付给该供应商，护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。</p>
+<p>出海ABC提供海外公司注册对接服务：先行核对报价与需求，再由具备相应资质和牌照的承办供应商受理办理。本页公布用户报价，便于比较与核对。</p>
+<p class="role-sub">服务费用请直接支付予承办供应商。护照及身份证件须通过该供应商的正式渠道提交。本站不代收款项，亦不在网页收集或留存证件资料。</p>
 </div>
-<p>中小企业、个体户、源头工厂要签合同、收款、报关或开店，需要先有一个能签字的公司。出海ABC先提供对接服务，再由承办供应商受理。下面是用户报价，整理日期为 2026年11月12日。除另行标明美元、新币外，金额为人民币。官费若以美元、港币或韩币计，保持原币种，不在本页折算。</p>
-<p class="quote-disclaimer">本页报价可能有更新滞后，也会随成本波动，解释以最新书面报价为准。</p>
-<p>银行开户、已暂停或需另议的项目，以及名称中含基金会、协会、联盟一类用词的特殊主体，一律询价，不在本页另行估价格。这里不点名银行。</p>
+<p>中小企业、个体户、源头工厂及原厂在签署合同、收取货款、办理报关或设立经营网点前，一般需先完成公司主体设立。出海ABC先行提供对接服务，再由承办供应商受理。以下为用户报价，整理日期为 2026年11月12日。除另行标明美元或新加坡元外，金额以人民币计。如官费以美元、港币或韩元收取，本页保留原币种，不予折算。</p>
+<p class="quote-disclaimer">本页报价可能因信息更新滞后或成本变动而与办理时不一致，解释以最新书面报价为准。</p>
+<p>银行开户、暂停办理或需另行协商的项目，以及名称中含基金会、协会、联盟等字样的特殊主体，均需询价，本页不另行估算价格。具体开户安排以咨询时说明为准，本页不列示银行名称。</p>
 {CTA_ZH}
 {POPULAR_ZH}
 <h2 id="美国其他州">美国其他州用户报价<a hidden class="anchor" aria-hidden="true" href="#美国其他州">#</a></h2>
-<p class="quote-included">下列州的用户报价，默认包含范围与上表美国热门州相同。金额为人民币。年审为参考数字，不加价，以确认时为准。双价按 INC / LLC 的顺序排列。</p>
+<p class="quote-included">下列各州用户报价的默认包含范围，与上表美国常用州相同。金额以人民币计。年审费用为参考金额，以书面确认为准。如列有两个价格，依次为 INC、LLC。</p>
 {table(OTHER_US, "zh", {"us", "annual", "note"})}
 <h2 id="其他地区">香港及其他地区<a hidden class="anchor" aria-hidden="true" href="#其他地区">#</a></h2>
-<p class="quote-included">香港公司注册按 4500 元公布。新加坡就业准证按新币报价。其余下列项目为人民币。年审等后续费用为参考数字，不加价。</p>
+<p class="quote-included">香港公司注册的用户报价为 4500 元。新加坡就业准证以新加坡元计价。其余下列项目以人民币计价。年审等后续费用为参考金额，以书面确认为准。</p>
 {table(PLACES, "zh", {"annual", "note"})}
 <h2 id="配套服务">配套服务<a hidden class="anchor" aria-hidden="true" href="#配套服务">#</a></h2>
-<p class="quote-included">美元、新币项目已在表中标明币种，不折算人民币。银行开户（对公或个人）一律询价，有的通道会暂停，以咨询当时为准，这里不点名银行。</p>
+<p class="quote-included">表中已标明美元或新加坡元的项目，均按原币种计价，不折算为人民币。对公或个人银行开户均需询价；部分渠道可能暂停，以咨询时说明为准。本页不列示银行名称。</p>
 {table(ADDONS, "zh", {"addon", "annual", "note"})}
-<p>美国报税收入 100 万美元以上，请询价。</p>
-<h2 id="所需材料">先准备这些材料<a hidden class="anchor" aria-hidden="true" href="#所需材料">#</a></h2>
-<p>网站不收文件。下面是美国公司注册通常会用到的，方便提前找齐；其他地区的材料以确认时为准。</p>
+<p>美国税务申报中，收入超过 100 万美元的项目请询价。</p>
+<h2 id="所需材料">所需材料<a hidden class="anchor" aria-hidden="true" href="#所需材料">#</a></h2>
+<p>本站不通过网页收取文件。下列为美国公司注册通常所需材料，供提前准备；其他地区所需材料以书面确认为准。</p>
 <ul>
-<li>拟定的英文公司名（也可以请供应商协助提供备选）</li>
+<li>拟定英文公司名称（亦可由承办供应商协助提供备选名称）</li>
 <li>有效证件照片，例如护照、身份证或驾照</li>
 <li>证件上的地址</li>
 <li>电话和邮箱</li>
-<li>如果已有 SSN 或 ITIN，可以一并准备</li>
+<li>如已持有 SSN 或 ITIN，请一并准备</li>
 </ul>
 <h2 id="联系咨询">联系咨询<a hidden class="anchor" aria-hidden="true" href="#联系咨询">#</a></h2>
 {CTA_ZH}
 <h2 id="报价说明">报价说明<a hidden class="anchor" aria-hidden="true" href="#报价说明">#</a></h2>
 <ul>
-<li>本页报价可能有更新滞后，也会随成本波动，解释以最新书面报价为准。</li>
-<li>因国际汇率和各国政策调整，公认证等费用同样以确认时为准。</li>
-<li>各项目流程及所需资料，以实际需求为准。</li>
-<li>所列时效按加急、工作日估算，仅供参考，实际以官方审查为准，不对时效作承诺。</li>
-<li>价格不含税点；如需开票，票点另计。美国、英国交付文件默认 PDF；如需纸质资料和公章，另加 200 元。</li>
-<li>最终以书面确认为准。</li>
+<li>本页报价可能因信息更新滞后或成本变动而与办理时不一致，解释以最新书面报价为准。</li>
+<li>因国际汇率及各国政策调整，公证、认证等费用同样以书面确认为准。</li>
+<li>各项目的办理流程及所需资料，以实际需求及书面确认为准。</li>
+<li>所列办理时效按加急及工作日估算，仅供参考，实际取决于官方审查进度，本页不对时效作出承诺。</li>
+<li>所列价格不含税点；如需开具发票，税费另行计算。美国及英国文件默认以 PDF 交付；如需纸质文件及公司印章，另计 200 元。</li>
+<li>最终解释以书面确认为准。</li>
 </ul>
-<p>出海ABC提供对接服务，先核对报价和需求，再由具备相应资质和牌照的承办供应商受理办理。费用请直接付给该供应商，护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。</p>
+<p>出海ABC提供对接服务，先行核对报价与需求，再由具备相应资质和牌照的承办供应商受理办理。服务费用请直接支付予承办供应商。护照及身份证件须通过该供应商的正式渠道提交。本站不代收款项，亦不在网页收集或留存证件资料。</p>
 <h2 id="常见问题">常见问题<a hidden class="anchor" aria-hidden="true" href="#常见问题">#</a></h2>
 <div class="faq">
-<details open><summary>Q：资质和牌照是谁的？</summary><p>A：具备相应资质和牌照的承办供应商负责受理和办理。出海ABC提供对接服务，先帮您核对报价和需求。</p></details>
-<details open><summary>Q：钱付给谁？</summary><p>A：费用请直接付给承办供应商。护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。</p></details>
-<details open><summary>Q：为什么有的项目没有报价？</summary><p>A：银行开户、已暂停或需另议的项目，以及未列出的特殊主体，请发邮件或微信询价。我们不在这里另行估价格。</p></details>
-<details open><summary>Q：要不要本人到场？</summary><p>A：咨询和交资料都在邮件或微信里完成，不为了注册要求你飞到当地。有的地方另有身份核验，例如英国注册处要在线认证，对接时会单独说明。</p></details>
-<details open><summary>Q：没有 SSN 能办吗？</summary><p>A：没有 SSN 也可以先咨询。已经有 SSN 或 ITIN 的，准备材料时可以一并带上。美国各州注册的用户报价，默认包含申请 EIN。</p></details>
-<details open><summary>Q：选哪个州？</summary><p>A：本页已列出各州用户报价，选择按用途在对接时确定，这一页不代你选州。纽约州 LLC 因为要登报，一般不建议，可以改问 INC，或其他州。</p></details>
-<details open><summary>Q：报价是哪种货币？</summary><p>A：除标明美元、新币的项目外，均为人民币。官费如按美元、港币或韩币收取，保持原币种，以确认时为准。</p></details>
+<details open><summary>Q：资质和牌照由谁持有？</summary><p>A：办理所需资质和牌照由承办供应商持有，并由其受理及办理。出海ABC提供对接服务，先行核对报价与需求。</p></details>
+<details open><summary>Q：费用应支付给谁？</summary><p>A：服务费用请直接支付予承办供应商。护照及身份证件须通过该供应商的正式渠道提交。本站不代收款项，亦不在网页收集或留存证件资料。</p></details>
+<details open><summary>Q：为何部分项目未公布报价？</summary><p>A：银行开户、暂停办理或需另行协商的项目，以及未列出的特殊主体，请通过电子邮件或微信询价。本页不对此类项目另行估算价格。</p></details>
+<details open><summary>Q：是否需要本人前往当地？</summary><p>A：咨询及材料提交均通过电子邮件或微信完成，注册本身不要求客户前往当地。部分地区另有身份核验要求，例如英国注册处的在线认证，将在确认方案时单独说明。</p></details>
+<details open><summary>Q：没有 SSN 能否办理？</summary><p>A：没有 SSN 亦可先行咨询。如已持有 SSN 或 ITIN，准备材料时可一并提供。美国各州注册的用户报价默认包含申请 EIN。</p></details>
+<details open><summary>Q：应选择哪个州？</summary><p>A：本页已列出各州用户报价。具体选择将根据实际用途在对接时确定，本页不代替客户作出选择。纽约州 LLC 因需办理登报，一般不作为首选，可咨询 INC 或其他州。</p></details>
+<details open><summary>Q：报价采用何种货币？</summary><p>A：除标明美元或新加坡元的项目外，均为人民币。官费如以美元、港币或韩元收取，本页保留原币种，以书面确认为准。</p></details>
 </div>
-<p>本文含推广说明，详见 <a href=/disclosure/>推广披露</a>。</p>
+<p>本页含推广说明，详见 <a href=/disclosure/>推广披露</a>。</p>
 </div>'''
     return toc + body
 
@@ -496,67 +496,67 @@ def build_en() -> str:
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg>
 <a href=/en/services/>Services</a>
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg></nav><h1 class="post-title entry-hint-parent">Overseas company registration</h1><div class="post-description">''' + DESC_EN + '''</div><div class="post-meta"><span>Translations:</span><ul class="i18n_list"><li><a href=https://fwqabc.com/services/overseas-company/>Zh-Cn</a></li></ul></div></header><details class="toc" open><summary accesskey=c title="(Alt + C)"><span class="title">Table of Contents</span></summary><div class="inner"><ul>
-<li><a href="#user-quotes" aria-label="User quotes for popular US states">User quotes for popular US states</a></li>
+<li><a href="#user-quotes" aria-label="User quotes for commonly used US states">User quotes for commonly used US states</a></li>
 <li><a href="#follow-on-fees" aria-label="Follow-on fees for these states">Follow-on fees for these states</a></li>
 <li><a href="#other-us-states" aria-label="User quotes for other US states">User quotes for other US states</a></li>
 <li><a href="#other-places" aria-label="Hong Kong and other places">Hong Kong and other places</a></li>
 <li><a href="#add-ons" aria-label="Add-on services">Add-on services</a></li>
-<li><a href="#documents" aria-label="Documents to prepare">Documents to prepare</a></li>
+<li><a href="#documents" aria-label="Required documents">Required documents</a></li>
 <li><a href="#contact" aria-label="Contact">Contact</a></li>
 <li><a href="#quote-notes" aria-label="Quote notes">Quote notes</a></li>
 <li><a href="#questions" aria-label="Questions">Questions</a></li>
 </ul></div></details><div class="post-content md-content">'''
     body = f'''<div class="role-notice">
-<p>出海ABC provides a coordination service for overseas company registration. We first review the quote and your needs, then a licensed fulfilling supplier accepts and handles the filing. Prices are published here so you can compare and check them.</p>
-<p class="role-sub">Please pay that supplier directly, and submit passports or identity documents through the supplier’s official process. This site does not collect payment, and does not keep identity documents on the page.</p>
+<p>出海ABC provides a coordination service for overseas company registration. The quote and requirements are reviewed first; a licensed fulfilling supplier then accepts and completes the filing. User quotes are published on this page for comparison and verification.</p>
+<p class="role-sub">Fees should be paid directly to that supplier. Passports and identity documents must be submitted through the supplier’s official process. This site does not collect payment, and does not retain identity documents on the page.</p>
 </div>
-<p>A small company, a sole proprietor, or a factory that sells its own goods needs a company that can sign before contracts, payments, customs, or a storefront. 出海ABC first provides the coordination, then the fulfilling supplier accepts the case. The figures below are user quotes, compiled on 12 November 2026. Amounts are in renminbi unless a row is marked in US dollars or Singapore dollars. Official fees charged in US dollars, Hong Kong dollars, or Korean won stay in that currency and are not converted on this page.</p>
-<p class="quote-disclaimer">Quotes on this page may lag behind updates and may move with costs. The latest written quote is what counts.</p>
-<p>Bank accounts, items that are paused or to be agreed, and special entities whose names include words such as foundation, association, or alliance, are by inquiry. This page does not invent a price for them, and it does not name banks.</p>
+<p>Small and medium-sized enterprises, sole proprietors, and source manufacturers generally need to establish a company before entering into contracts, receiving payment, completing customs formalities, or opening a place of business. 出海ABC provides coordination first; the fulfilling supplier then accepts the case. The figures below are user quotes, compiled on 12 November 2026. Amounts are in renminbi unless a row is marked in US dollars or Singapore dollars. Official fees charged in US dollars, Hong Kong dollars, or Korean won remain in that currency and are not converted on this page.</p>
+<p class="quote-disclaimer">Quotes on this page may differ from the price at the time of filing because of delayed updates or changes in cost. The latest written quote is authoritative.</p>
+<p>Bank accounts, items that are suspended or subject to separate agreement, and special entities whose names include words such as foundation, association, or alliance, are available on inquiry. This page does not estimate a price for those items. Bank names are not listed; available arrangements are confirmed at the time of inquiry.</p>
 {CTA_EN}
 {POPULAR_EN}
 <h2 id="other-us-states">User quotes for other US states<a hidden class="anchor" aria-hidden="true" href="#other-us-states">#</a></h2>
-<p class="quote-included">The default package for the states below is the same as for the popular US states above. Amounts are in renminbi. Annual-review figures are a reference and are not marked up. Dual prices are listed as INC / LLC.</p>
+<p class="quote-included">The default scope of the user quotes for the states below is the same as for the commonly used US states above. Amounts are in renminbi. Annual-review figures are provided for reference and are confirmed in writing. Where two prices are listed, they appear in the order INC, LLC.</p>
 {table(OTHER_US, "en", {"us", "annual", "note"})}
 <h2 id="other-places">Hong Kong and other places<a hidden class="anchor" aria-hidden="true" href="#other-places">#</a></h2>
-<p class="quote-included">Hong Kong company registration is published at RMB 4,500. The Singapore Employment Pass is quoted in Singapore dollars. Other items below are in renminbi. Annual and follow-on figures are a reference and are not marked up.</p>
+<p class="quote-included">The user quote for Hong Kong company registration is RMB 4,500. The Singapore Employment Pass is priced in Singapore dollars. Other items below are in renminbi. Annual and follow-on figures are provided for reference and are confirmed in writing.</p>
 {table(PLACES, "en", {"annual", "note"})}
 <h2 id="add-ons">Add-on services<a hidden class="anchor" aria-hidden="true" href="#add-ons">#</a></h2>
-<p class="quote-included">Items in US dollars or Singapore dollars are labelled as such and are not converted into renminbi. Business or personal bank accounts are by inquiry; some channels pause, and this page does not name banks.</p>
+<p class="quote-included">Items denominated in US dollars or Singapore dollars are labelled as such and are not converted into renminbi. Business or personal bank accounts are available on inquiry; some channels may be suspended, and the position is confirmed at the time of inquiry. Bank names are not listed on this page.</p>
 {table(ADDONS, "en", {"addon", "annual", "note"})}
-<p>US tax filing for income above USD 1 million is by inquiry.</p>
-<h2 id="documents">Documents to prepare<a hidden class="anchor" aria-hidden="true" href="#documents">#</a></h2>
-<p>This site does not collect files. The list below is what a US company registration usually needs, so you can gather it early. Documents for other places are confirmed at the time of engagement.</p>
+<p>US tax filings for income above USD 1 million are available on inquiry.</p>
+<h2 id="documents">Required documents<a hidden class="anchor" aria-hidden="true" href="#documents">#</a></h2>
+<p>This site does not collect documents through the web page. The list below sets out materials typically required for a US company registration, for advance preparation. Materials for other jurisdictions are confirmed in writing.</p>
 <ul>
-<li>A proposed English company name (the supplier can also suggest options)</li>
+<li>A proposed English company name (the fulfilling supplier may also provide alternatives)</li>
 <li>A photo of a valid ID, such as a passport, national ID card, or driver licence</li>
 <li>The address on that ID</li>
 <li>A phone number and email address</li>
-<li>An SSN or ITIN, if you already have one</li>
+<li>An SSN or ITIN, if already held</li>
 </ul>
 <h2 id="contact">Contact<a hidden class="anchor" aria-hidden="true" href="#contact">#</a></h2>
 {CTA_EN}
 <h2 id="quote-notes">Quote notes<a hidden class="anchor" aria-hidden="true" href="#quote-notes">#</a></h2>
 <ul>
-<li>Quotes on this page may lag behind updates and may move with costs. The latest written quote is what counts.</li>
-<li>Legalization and similar fees also change with exchange rates and official rules, and are confirmed at the time of engagement.</li>
-<li>Process and documents follow the actual case.</li>
-<li>Timelines assume an expedited, business-day path and are a reference only. Official review decides the timing, and no timing is promised.</li>
-<li>Prices exclude a tax point; invoicing, if needed, is billed separately. US and UK deliveries are PDF by default; paper documents and a company seal add RMB 200.</li>
-<li>The written confirmation is what counts.</li>
+<li>Quotes on this page may differ from the price at the time of filing because of delayed updates or changes in cost. The latest written quote is authoritative.</li>
+<li>Legalization and similar fees may also change with exchange rates and official rules, and are confirmed in writing.</li>
+<li>Procedures and required documents follow the actual case and the written confirmation.</li>
+<li>The indicated timelines assume an expedited, business-day path and are for reference only. Actual timing depends on official review, and no timeline is promised.</li>
+<li>The listed prices exclude any tax point; if an invoice is required, tax is calculated separately. Documents for the United States and the United Kingdom are delivered as PDF by default; paper documents and a company seal are an additional RMB 200.</li>
+<li>The written confirmation is authoritative.</li>
 </ul>
-<p>出海ABC provides the coordination: we review the quote and your needs first, then a licensed fulfilling supplier accepts and handles the filing. Please pay the supplier directly, and submit passports or identity documents through the supplier’s official process. This site does not collect payment or keep identity documents on the page.</p>
+<p>出海ABC provides coordination: the quote and requirements are reviewed first, then a licensed fulfilling supplier accepts and completes the filing. Fees should be paid directly to the supplier. Passports and identity documents must be submitted through the supplier’s official process. This site does not collect payment or retain identity documents on the page.</p>
 <h2 id="questions">Questions<a hidden class="anchor" aria-hidden="true" href="#questions">#</a></h2>
 <div class="faq">
-<details open><summary>Q: Who holds the licences and qualifications?</summary><p>A: The licensed fulfilling supplier accepts the case and completes the work. 出海ABC provides the coordination, starting with the quote and your needs.</p></details>
-<details open><summary>Q: Who do I pay?</summary><p>A: Please pay the fulfilling supplier directly. Passports and identity documents are submitted through the supplier’s official process. This site does not collect payment or keep identity documents on the page.</p></details>
-<details open><summary>Q: Why are some items without a quote?</summary><p>A: Bank accounts, items that are paused or to be agreed, and special entities not listed here are by email or WeChat inquiry. This page does not invent a price for them.</p></details>
-<details open><summary>Q: Do I have to travel?</summary><p>A: Inquiry and document exchange are done by email or WeChat. You are not asked to fly there just to register. Some places have a separate identity check, such as the UK registrar’s online verification, which is explained when we confirm the details.</p></details>
-<details open><summary>Q: Can I file without an SSN?</summary><p>A: Yes, you can inquire without an SSN. If you already have an SSN or ITIN, include it when you prepare documents. User quotes for US state registrations include an EIN application by default.</p></details>
-<details open><summary>Q: Which state should I choose?</summary><p>A: This page lists user quotes by state. The choice is confirmed with you when the plan is settled; this page does not choose a state for you. A New York LLC is generally not suggested because of the publication step; ask about an INC, or another state.</p></details>
-<details open><summary>Q: Which currency are the quotes in?</summary><p>A: Amounts are in renminbi unless a row is marked in US dollars or Singapore dollars. Official fees charged in US dollars, Hong Kong dollars, or Korean won stay in that currency and are confirmed at the time of engagement.</p></details>
+<details open><summary>Q: Who holds the licences and qualifications?</summary><p>A: The fulfilling supplier holds the licences required for the filing and accepts and completes the work. 出海ABC provides coordination, beginning with a review of the quote and requirements.</p></details>
+<details open><summary>Q: To whom should fees be paid?</summary><p>A: Fees should be paid directly to the fulfilling supplier. Passports and identity documents must be submitted through the supplier’s official process. This site does not collect payment or retain identity documents on the page.</p></details>
+<details open><summary>Q: Why do some items have no published quote?</summary><p>A: Bank accounts, items that are suspended or subject to separate agreement, and special entities not listed here may be requested by email or WeChat. This page does not estimate a price for those items.</p></details>
+<details open><summary>Q: Is travel required?</summary><p>A: Inquiries and the submission of documents are completed by email or WeChat. Attendance in person is not required solely for registration. Some jurisdictions have a separate identity verification requirement, such as the UK registrar’s online verification, which will be explained when the plan is confirmed.</p></details>
+<details open><summary>Q: Can a filing proceed without an SSN?</summary><p>A: An inquiry may be made without an SSN. If an SSN or ITIN is already held, it should be included when documents are prepared. User quotes for US state registrations include an EIN application by default.</p></details>
+<details open><summary>Q: Which state should be selected?</summary><p>A: This page lists user quotes by state. The selection is confirmed according to the intended use when the plan is settled; this page does not make that choice on the client’s behalf. A New York LLC is generally not a first choice because of the publication requirement; an INC or another state may be discussed instead.</p></details>
+<details open><summary>Q: In which currency are the quotes stated?</summary><p>A: Amounts are in renminbi unless a row is marked in US dollars or Singapore dollars. Official fees charged in US dollars, Hong Kong dollars, or Korean won remain in that currency and are confirmed in writing.</p></details>
 </div>
-<p>This page includes an affiliate disclosure. See <a href=/en/disclosure/>Disclosure</a>.</p>
+<p>This page includes an affiliate disclosure. See the <a href=/en/disclosure/>disclosure statement</a>.</p>
 </div>'''
     return toc + body
 
