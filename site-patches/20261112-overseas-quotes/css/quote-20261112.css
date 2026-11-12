@@ -58,7 +58,7 @@
 .quote-table td.fee {
   font-weight: 700;
   color: var(--primary, #1a1a1a);
-  white-space: nowrap;
+  white-space: normal;
 }
 .quote-table td.note {
   min-width: 12em;

@@ -1,8 +1,8 @@
 # 替换 /services/ 列表中「海外公司注册」条目的摘要（中文）
 # 旧：出海的第一步是先立主体。...数字不写在这里，联系之后在微信群里报价和确认。
 # 新：
-出海第一步：先立主体。本页公布美国热门州的用户报价，其他地区和配套可询价。完整资质和牌照由承办供应商持有，出海ABC负责获客并对接。
+出海第一步：先立主体。本页公布海外公司注册及常见配套的用户报价，银行开户等项目可询价。完整资质和牌照由承办供应商持有，出海ABC负责获客并对接。
 
 # 英文 /en/services/ 旧摘要含 “Figures stay out of the page” / “It does not quote figures”
 # 新：
-Step 1 of going overseas: set up a company. This page publishes user quotes for popular US states. Other places and add-ons are by inquiry. Licences sit with the fulfilling supplier; 出海ABC only acquires customers and hands off the inquiry.
+Step 1 of going overseas: set up a company. This page publishes user quotes for overseas company registration and common add-ons. Bank accounts are by inquiry. Licences sit with the fulfilling supplier; 出海ABC only acquires customers and hands off the inquiry.
