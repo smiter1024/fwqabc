@@ -393,15 +393,17 @@ def table(rows, lang, cols):
 
 
 CTA_ZH = '''<div class="service-cta">
-<p>要按本页报价办理，或询银行开户和其他未列出的项目，发邮件即可。主题请写「咨询海外公司注册」。我们看到后会拉微信群，安排承办供应商受理。</p>
-<p><a class="service-cta-btn" href="mailto:chuhaiABC@outlook.com?subject=%E5%92%A8%E8%AF%A2%E6%B5%B7%E5%A4%96%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C">邮件咨询海外公司注册</a></p>
+<p>咨询请发邮件或添加微信。</p>
+<p>邮箱：<a href="mailto:chuhaiABC@outlook.com?subject=%E5%92%A8%E8%AF%A2%E6%B5%B7%E5%A4%96%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C">chuhaiABC@outlook.com</a></p>
+<p><a class="service-cta-btn" href="mailto:chuhaiABC@outlook.com?subject=%E5%92%A8%E8%AF%A2%E6%B5%B7%E5%A4%96%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C">发邮件咨询</a></p>
 <p>微信：出海ABC（四川成都）。扫码添加。这里没有单独的文字微信号。</p>
 <p><img src=/images/contact/wechat.jpg alt="出海ABC 微信二维码" width=280 height=381></p>
 </div>'''
 
 CTA_EN = '''<div class="service-cta">
-<p>To proceed on a published quote, or to inquire about a bank account or another item not listed here, send an email with the subject line “Overseas company registration”. After we see it, we open a WeChat group and arrange for the supplier to accept the case.</p>
-<p><a class="service-cta-btn" href="mailto:chuhaiABC@outlook.com?subject=Overseas%20company%20registration">Email about company registration</a></p>
+<p>To inquire, email us or add the WeChat account.</p>
+<p>Email: <a href="mailto:chuhaiABC@outlook.com?subject=Overseas%20company%20registration">chuhaiABC@outlook.com</a></p>
+<p><a class="service-cta-btn" href="mailto:chuhaiABC@outlook.com?subject=Overseas%20company%20registration">Send an email</a></p>
 <p>WeChat: 出海ABC (Chengdu, Sichuan). Scan the card to add the account. There is no separate text WeChat ID.</p>
 <p><img src=/images/contact/wechat.jpg alt="出海ABC WeChat QR code" width=280 height=381></p>
 </div>'''
@@ -430,7 +432,7 @@ def build_zh() -> str:
 <li><a href="#其他地区" aria-label="香港及其他地区">香港及其他地区</a></li>
 <li><a href="#配套服务" aria-label="配套服务">配套服务</a></li>
 <li><a href="#所需材料" aria-label="先准备这些材料">先准备这些材料</a></li>
-<li><a href="#怎么对接" aria-label="怎么对接">怎么对接</a></li>
+<li><a href="#联系咨询" aria-label="联系咨询">联系咨询</a></li>
 <li><a href="#报价说明" aria-label="报价说明">报价说明</a></li>
 <li><a href="#常见问题" aria-label="常见问题">常见问题</a></li>
 </ul></div></details><div class="post-content md-content">'''
@@ -462,7 +464,7 @@ def build_zh() -> str:
 <li>电话和邮箱</li>
 <li>如果已有 SSN 或 ITIN，可以一并准备</li>
 </ul>
-<h2 id="怎么对接">怎么对接<a hidden class="anchor" aria-hidden="true" href="#怎么对接">#</a></h2>
+<h2 id="联系咨询">联系咨询<a hidden class="anchor" aria-hidden="true" href="#联系咨询">#</a></h2>
 {CTA_ZH}
 <h2 id="报价说明">报价说明<a hidden class="anchor" aria-hidden="true" href="#报价说明">#</a></h2>
 <ul>
@@ -500,7 +502,7 @@ def build_en() -> str:
 <li><a href="#other-places" aria-label="Hong Kong and other places">Hong Kong and other places</a></li>
 <li><a href="#add-ons" aria-label="Add-on services">Add-on services</a></li>
 <li><a href="#documents" aria-label="Documents to prepare">Documents to prepare</a></li>
-<li><a href="#how-it-proceeds" aria-label="How it proceeds">How it proceeds</a></li>
+<li><a href="#contact" aria-label="Contact">Contact</a></li>
 <li><a href="#quote-notes" aria-label="Quote notes">Quote notes</a></li>
 <li><a href="#questions" aria-label="Questions">Questions</a></li>
 </ul></div></details><div class="post-content md-content">'''
@@ -532,7 +534,7 @@ def build_en() -> str:
 <li>A phone number and email address</li>
 <li>An SSN or ITIN, if you already have one</li>
 </ul>
-<h2 id="how-it-proceeds">How it proceeds<a hidden class="anchor" aria-hidden="true" href="#how-it-proceeds">#</a></h2>
+<h2 id="contact">Contact<a hidden class="anchor" aria-hidden="true" href="#contact">#</a></h2>
 {CTA_EN}
 <h2 id="quote-notes">Quote notes<a hidden class="anchor" aria-hidden="true" href="#quote-notes">#</a></h2>
 <ul>
