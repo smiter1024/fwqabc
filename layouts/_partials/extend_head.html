@@ -1,6 +1,10 @@
+{{- with site.Params.xHandle }}
+<meta name="twitter:site" content="@{{ . }}">
+{{- end }}
 {{- with site.Params.umami }}{{ if site.Params.umamiWebsiteId }}
 <script defer src="{{ . }}" data-website-id="{{ site.Params.umamiWebsiteId }}"></script>
 {{- end }}{{ end }}
+{{- if eq .RelPermalink "/about/" }}<link rel="stylesheet" href="/chuhai-about.css?v=20261106b">{{ end }}
 <style>
 .go-btn{display:inline-block;padding:.6em 1.2em;min-height:44px;line-height:1.6;margin:.3em 0;background:#C2380F;color:#fff!important;border-radius:8px;font-weight:600;text-decoration:none!important;box-shadow:none!important;white-space:nowrap}
 .go-btn:hover{background:#9E2D0B}

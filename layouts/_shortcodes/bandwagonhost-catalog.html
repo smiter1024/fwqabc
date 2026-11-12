@@ -54,7 +54,7 @@
                 {{- if $offers }}
                   {{- range $offers }}
                     {{- if .available }}
-                    <a class="bwh-price" href="{{ .url }}" target="_blank" rel="sponsored nofollow noopener" data-period="{{ $period.id }}" aria-label="{{ $dc.city }} {{ $dc.id }}，产品 {{ $plan.product_id }}，{{ $period.label }} {{ printf "%.2f" (div (float .amount_cents) 100) }} 美元，前往官方订购"><strong>${{ printf "%.2f" (div (float .amount_cents) 100) }}</strong><span>{{ $period.label }} · 去官网</span></a>
+                    <a class="bwh-price" href="{{ .url }}" target="_blank" rel="sponsored nofollow noopener" data-period="{{ $period.id }}" aria-label="{{ $dc.city }} {{ $dc.id }}，产品 {{ $plan.product_id }}，{{ $period.label }} {{ printf "%.2f" (div (float .amount_cents) 100) }} 美元，去官网核对并下单（含推广）"><strong>${{ printf "%.2f" (div (float .amount_cents) 100) }}</strong><span>{{ $period.label }}<i class="bwh-sep"> · </i><b class="bwh-go">去官网核对并下单</b></span><small class="aff-tag">含推广</small></a>
                     {{- else }}
                     <span class="bwh-unavailable">{{ $period.label }}暂缺货</span>
                     {{- end }}

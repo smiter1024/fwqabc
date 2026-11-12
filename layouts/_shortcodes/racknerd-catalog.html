@@ -32,7 +32,7 @@
           {{- range .offers }}<div data-period="{{ .period }}"><dt>{{ .label }}</dt><dd>${{ printf "%.2f" (div (float .amount_cents) 100) }}</dd></div>{{ end }}
         </dl>
         <p class="racknerd-status">{{ .availability }}</p>
-        <a class="go-btn" href="{{ (index .offers 0).affiliate_url }}" target="_blank" rel="sponsored nofollow noopener" aria-label="通过推广链接配置 {{ .name }}，产品编号 {{ .product_id }}">去官网配置</a>
+        <span class="cta-pair"><a class="go-btn" href="{{ (index .offers 0).affiliate_url }}" target="_blank" rel="sponsored nofollow noopener" aria-label="去官网核对并下单（含推广）：配置 {{ .name }}，产品编号 {{ .product_id }}">去官网核对并下单</a><small class="aff-tag">含推广</small></span>
         <a class="racknerd-source-link" href="{{ .purchase_url }}" target="_blank" rel="noopener">查看原始配置页</a>
       </article>
       {{- end }}

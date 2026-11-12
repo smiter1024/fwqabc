@@ -3,6 +3,8 @@ title: "隐私政策"
 url: "/privacy/"
 ShowToc: false
 ShowReadingTime: false
+date: 2026-11-01T12:00:00+08:00
+lastmod: 2026-11-01T12:00:00+08:00
 ---
 
 本站为静态网站，不要求注册，不收集个人身份信息。
