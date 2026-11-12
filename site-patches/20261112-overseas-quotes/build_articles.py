@@ -437,7 +437,8 @@ def build_zh() -> str:
 <p>办理所需的完整资质和牌照，由承办供应商持有。出海ABC只负责获客，并把咨询交给供应商对接。</p>
 <p class="role-sub">款项请直接付给供应商。本站不代收，也不在网页上收集护照或证件。</p>
 </div>
-<p>中小企业、个体户、源头工厂要签合同、收款、报关或开店，需要先有一个能签字的公司。下面是用户报价，整理日期为 2026年11月12日，仅供参考，以确认时的书面价格为准。除另行标明美元、新币外，金额为人民币。官费若以美元、港币或韩币计，保持原币种，不在本页折算。</p>
+<p>中小企业、个体户、源头工厂要签合同、收款、报关或开店，需要先有一个能签字的公司。下面是用户报价，整理日期为 2026年11月12日。除另行标明美元、新币外，金额为人民币。官费若以美元、港币或韩币计，保持原币种，不在本页折算。</p>
+<p class="quote-disclaimer">本页报价可能有更新滞后，也会随成本波动，解释以最新书面报价为准。</p>
 <p>银行开户、已暂停或需另议的项目，以及名称中含基金会、协会、联盟一类用词的特殊主体，一律询价，不在本页另行估价格。这里不点名银行。</p>
 {CTA_ZH}
 {POPULAR_ZH}
@@ -471,7 +472,8 @@ def build_zh() -> str:
 {CTA_ZH}
 <h2 id="报价说明">报价说明<a hidden class="anchor" aria-hidden="true" href="#报价说明">#</a></h2>
 <ul>
-<li>因国际汇率和各国政策调整，本页报价和公认证费用以确认时的价格为准，仅供参考。</li>
+<li>本页报价可能有更新滞后，也会随成本波动，解释以最新书面报价为准。</li>
+<li>因国际汇率和各国政策调整，公认证等费用同样以确认时为准。</li>
 <li>各项目流程及所需资料，以实际需求为准。</li>
 <li>所列时效按加急、工作日估算，仅供参考，实际以官方审查为准，不对时效作承诺。</li>
 <li>价格不含税点；如需开票，票点另计。美国、英国交付文件默认 PDF；如需纸质资料和公章，另加 200 元。</li>
@@ -512,7 +514,8 @@ def build_en() -> str:
 <p>The licences and qualifications needed to file sit with the fulfilling supplier. 出海ABC only acquires customers and hands inquiries to that supplier.</p>
 <p class="role-sub">Pay the supplier directly. This site does not take payment, and it does not collect a passport or other ID on the page.</p>
 </div>
-<p>A small company, a sole proprietor, or a factory that sells its own goods needs a company that can sign before contracts, payments, customs, or a storefront. The figures below are user quotes, compiled on 12 November 2026. They are a reference only; the written confirmation is what counts. Amounts are in renminbi unless a row is marked in US dollars or Singapore dollars. Official fees charged in US dollars, Hong Kong dollars, or Korean won stay in that currency and are not converted on this page.</p>
+<p>A small company, a sole proprietor, or a factory that sells its own goods needs a company that can sign before contracts, payments, customs, or a storefront. The figures below are user quotes, compiled on 12 November 2026. Amounts are in renminbi unless a row is marked in US dollars or Singapore dollars. Official fees charged in US dollars, Hong Kong dollars, or Korean won stay in that currency and are not converted on this page.</p>
+<p class="quote-disclaimer">Quotes on this page may lag behind updates and may move with costs. The latest written quote is what counts.</p>
 <p>Bank accounts, items that are paused or to be agreed, and special entities whose names include words such as foundation, association, or alliance, are by inquiry. This page does not invent a price for them, and it does not name banks.</p>
 {CTA_EN}
 {POPULAR_EN}
@@ -546,7 +549,8 @@ def build_en() -> str:
 {CTA_EN}
 <h2 id="quote-notes">Quote notes<a hidden class="anchor" aria-hidden="true" href="#quote-notes">#</a></h2>
 <ul>
-<li>Because exchange rates and official rules change, the quotes and legalization fees on this page are a reference and are confirmed at the time of engagement.</li>
+<li>Quotes on this page may lag behind updates and may move with costs. The latest written quote is what counts.</li>
+<li>Legalization and similar fees also change with exchange rates and official rules, and are confirmed at the time of engagement.</li>
 <li>Process and documents follow the actual case.</li>
 <li>Timelines assume an expedited, business-day path and are a reference only. Official review decides the timing, and no timing is promised.</li>
 <li>Prices exclude a tax point; invoicing, if needed, is billed separately. US and UK deliveries are PDF by default; paper documents and a company seal add RMB 200.</li>

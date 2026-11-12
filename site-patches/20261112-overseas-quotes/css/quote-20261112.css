@@ -76,3 +76,13 @@
 .place-list {
   color: var(--content, #333);
 }
+
+.quote-disclaimer {
+  border-left: 3px solid var(--c-btn, #f24615);
+  padding: 10px 14px 10px 16px;
+  margin: 0 0 1.4em;
+  background: rgba(242, 70, 21, 0.04);
+  color: var(--primary, #1a1a1a);
+  font-weight: 600;
+  line-height: 1.65;
+}
