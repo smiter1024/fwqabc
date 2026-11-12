@@ -44,6 +44,10 @@ fwqabc.com {{
 \t\tX-Content-Type-Options nosniff
 \t\tReferrer-Policy strict-origin-when-cross-origin
 \t}}
+\t# 默认语言不在 /zh-cn/ 下，空壳页面 301 回首页；保留 /zh-cn/sitemap.xml
+\t@zhcnroot path /zh-cn /zh-cn/
+\tredir @zhcnroot / 301
+\theader /search/* X-Robots-Tag "noindex, follow"
 \tfile_server
 \thandle_errors {{
 \t\trewrite * /404.html
