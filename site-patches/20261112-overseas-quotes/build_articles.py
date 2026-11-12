@@ -463,13 +463,6 @@ def build_zh() -> str:
 <li>如果已有 SSN 或 ITIN，可以一并准备</li>
 </ul>
 <h2 id="怎么对接">怎么对接<a hidden class="anchor" aria-hidden="true" href="#怎么对接">#</a></h2>
-<ul>
-<li>看本页报价，或就银行开户和未列出的项目发询价。</li>
-<li>用本页邮箱发信，或添加微信。</li>
-<li>我们拉一个微信群，确认方案。已公布报价的项目，仍以群里书面确认为准。</li>
-<li>按要求交资料，用微信或邮箱，不要传到这个网站。</li>
-<li>由承办供应商办理。款项请直接付给供应商。</li>
-</ul>
 {CTA_ZH}
 <h2 id="报价说明">报价说明<a hidden class="anchor" aria-hidden="true" href="#报价说明">#</a></h2>
 <ul>
@@ -540,13 +533,6 @@ def build_en() -> str:
 <li>An SSN or ITIN, if you already have one</li>
 </ul>
 <h2 id="how-it-proceeds">How it proceeds<a hidden class="anchor" aria-hidden="true" href="#how-it-proceeds">#</a></h2>
-<ul>
-<li>Review the quotes on this page, or inquire about a bank account or an item not listed here.</li>
-<li>Email the address on this page, or add the WeChat account.</li>
-<li>We open a WeChat group and confirm the plan. Published quotes are still confirmed in writing in that group.</li>
-<li>Send documents by WeChat or email, not through this website.</li>
-<li>The fulfilling supplier handles the filing. Pay the supplier directly.</li>
-</ul>
 {CTA_EN}
 <h2 id="quote-notes">Quote notes<a hidden class="anchor" aria-hidden="true" href="#quote-notes">#</a></h2>
 <ul>
