@@ -408,13 +408,14 @@ CTA_EN = '''<div class="service-cta">
 
 DESC_ZH = (
     "出海第一步：先立主体。本页公布海外公司注册及常见配套的用户报价，银行开户等项目可询价。"
-    "办理所需的完整资质和牌照由承办供应商持有；出海ABC负责获客，并把咨询交给供应商对接。"
-    "本站不代收款项，也不在网页上收集证件。"
+    "出海ABC负责咨询和对接，具体办理由具备相应资质和牌照的承办供应商完成。"
+    "费用请直接付给该供应商，护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。"
 )
 DESC_EN = (
     "Step 1 of going overseas: set up a company. This page publishes user quotes for overseas company registration and common add-ons. "
-    "Bank accounts and some other items are by inquiry. The licences and qualifications needed to file sit with the fulfilling supplier. "
-    "出海ABC only acquires customers and hands inquiries to that supplier. This site does not take payment or collect ID documents."
+    "Bank accounts and some other items are by inquiry. 出海ABC provides consultation and introduces you to the fulfilling supplier, "
+    "who holds the required licences and completes the work. Please pay that supplier directly, and submit passports or identity documents "
+    "through the supplier’s official process. This site does not collect payment or keep identity documents on the page."
 )
 
 
@@ -434,8 +435,8 @@ def build_zh() -> str:
 <li><a href="#常见问题" aria-label="常见问题">常见问题</a></li>
 </ul></div></details><div class="post-content md-content">'''
     body = f'''<div class="role-notice">
-<p>办理所需的完整资质和牌照，由承办供应商持有。出海ABC只负责获客，并把咨询交给供应商对接。</p>
-<p class="role-sub">款项请直接付给供应商。本站不代收，也不在网页上收集护照或证件。</p>
+<p>出海ABC负责咨询和对接，具体办理由具备相应资质和牌照的承办供应商完成。</p>
+<p class="role-sub">费用请直接付给该供应商，护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。</p>
 </div>
 <p>中小企业、个体户、源头工厂要签合同、收款、报关或开店，需要先有一个能签字的公司。下面是用户报价，整理日期为 2026年11月12日。除另行标明美元、新币外，金额为人民币。官费若以美元、港币或韩币计，保持原币种，不在本页折算。</p>
 <p class="quote-disclaimer">本页报价可能有更新滞后，也会随成本波动，解释以最新书面报价为准。</p>
@@ -479,11 +480,11 @@ def build_zh() -> str:
 <li>价格不含税点；如需开票，票点另计。美国、英国交付文件默认 PDF；如需纸质资料和公章，另加 200 元。</li>
 <li>最终以书面确认为准。</li>
 </ul>
-<p>办理所需的完整资质和牌照由承办供应商持有。出海ABC只负责获客和对接，不承办注册本身，也不代收客户款项。</p>
+<p>出海ABC负责咨询和对接，具体办理由具备相应资质和牌照的承办供应商完成。费用请直接付给该供应商，护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。</p>
 <h2 id="常见问题">常见问题<a hidden class="anchor" aria-hidden="true" href="#常见问题">#</a></h2>
 <div class="faq">
-<details open><summary>Q：资质和牌照是谁的？</summary><p>A：办理所需的完整资质和牌照，由承办供应商持有。出海ABC只负责获客，并把咨询交给供应商对接。</p></details>
-<details open><summary>Q：钱付给谁？</summary><p>A：请直接付给承办供应商。本站不代收注册款项，也不在网页上收集护照或证件。</p></details>
+<details open><summary>Q：资质和牌照是谁的？</summary><p>A：具体办理由具备相应资质和牌照的承办供应商完成。出海ABC负责咨询和对接。</p></details>
+<details open><summary>Q：钱付给谁？</summary><p>A：费用请直接付给承办供应商。护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。</p></details>
 <details open><summary>Q：为什么有的项目没有报价？</summary><p>A：银行开户、已暂停或需另议的项目，以及未列出的特殊主体，请发邮件或微信询价。我们不在这里另行估价格。</p></details>
 <details open><summary>Q：要不要本人到场？</summary><p>A：咨询和交资料都在邮件或微信里完成，不为了注册要求你飞到当地。有的地方另有身份核验，例如英国注册处要在线认证，对接时会单独说明。</p></details>
 <details open><summary>Q：没有 SSN 能办吗？</summary><p>A：没有 SSN 也可以先咨询。已经有 SSN 或 ITIN 的，准备材料时可以一并带上。美国各州注册的用户报价，默认包含申请 EIN。</p></details>
@@ -511,8 +512,8 @@ def build_en() -> str:
 <li><a href="#questions" aria-label="Questions">Questions</a></li>
 </ul></div></details><div class="post-content md-content">'''
     body = f'''<div class="role-notice">
-<p>The licences and qualifications needed to file sit with the fulfilling supplier. 出海ABC only acquires customers and hands inquiries to that supplier.</p>
-<p class="role-sub">Pay the supplier directly. This site does not take payment, and it does not collect a passport or other ID on the page.</p>
+<p>出海ABC provides consultation and introduces you to the fulfilling supplier. That supplier holds the required licences and completes the work.</p>
+<p class="role-sub">Please pay that supplier directly, and submit passports or identity documents through the supplier’s official process. This site does not collect payment, and does not keep identity documents on the page.</p>
 </div>
 <p>A small company, a sole proprietor, or a factory that sells its own goods needs a company that can sign before contracts, payments, customs, or a storefront. The figures below are user quotes, compiled on 12 November 2026. Amounts are in renminbi unless a row is marked in US dollars or Singapore dollars. Official fees charged in US dollars, Hong Kong dollars, or Korean won stay in that currency and are not converted on this page.</p>
 <p class="quote-disclaimer">Quotes on this page may lag behind updates and may move with costs. The latest written quote is what counts.</p>
@@ -556,11 +557,11 @@ def build_en() -> str:
 <li>Prices exclude a tax point; invoicing, if needed, is billed separately. US and UK deliveries are PDF by default; paper documents and a company seal add RMB 200.</li>
 <li>The written confirmation is what counts.</li>
 </ul>
-<p>The licences and qualifications needed to file sit with the fulfilling supplier. 出海ABC only acquires customers and hands off the inquiry. It does not itself file the registration, and it does not take customer payments.</p>
+<p>出海ABC provides consultation and introduces you to the fulfilling supplier. That supplier holds the required licences and completes the work. Please pay the supplier directly, and submit passports or identity documents through the supplier’s official process. This site does not collect payment or keep identity documents on the page.</p>
 <h2 id="questions">Questions<a hidden class="anchor" aria-hidden="true" href="#questions">#</a></h2>
 <div class="faq">
-<details open><summary>Q: Who holds the licences and qualifications?</summary><p>A: The licences and qualifications needed to file sit with the fulfilling supplier. 出海ABC only acquires customers and hands inquiries to that supplier.</p></details>
-<details open><summary>Q: Who do I pay?</summary><p>A: Pay the fulfilling supplier directly. This site does not take registration payments, and it does not collect a passport or other ID on the page.</p></details>
+<details open><summary>Q: Who holds the licences and qualifications?</summary><p>A: The fulfilling supplier holds the required licences and completes the work. 出海ABC provides consultation and introduces you to that supplier.</p></details>
+<details open><summary>Q: Who do I pay?</summary><p>A: Please pay the fulfilling supplier directly. Passports and identity documents are submitted through the supplier’s official process. This site does not collect payment or keep identity documents on the page.</p></details>
 <details open><summary>Q: Why are some items without a quote?</summary><p>A: Bank accounts, items that are paused or to be agreed, and special entities not listed here are by email or WeChat inquiry. This page does not invent a price for them.</p></details>
 <details open><summary>Q: Do I have to travel?</summary><p>A: Inquiry and document exchange are done by email or WeChat. You are not asked to fly there just to register. Some places have a separate identity check, such as the UK registrar’s online verification, which is explained at the handoff.</p></details>
 <details open><summary>Q: Can I file without an SSN?</summary><p>A: Yes, you can inquire without an SSN. If you already have an SSN or ITIN, include it when you prepare documents. User quotes for US state registrations include an EIN application by default.</p></details>
