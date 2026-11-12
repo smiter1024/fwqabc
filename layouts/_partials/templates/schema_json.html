@@ -1,0 +1,125 @@
+{{- if .IsHome }}
+{{- $same := slice -}}
+{{- range site.Params.schema.sameAs }}
+  {{- $u := trim . " " -}}
+  {{- if $u }}{{ $same = $same | append $u }}{{ end -}}
+{{- end }}
+{{- with site.Params.xHandle }}
+  {{- $u := printf "https://x.com/%s" . -}}
+  {{- if not (in $same $u) }}{{ $same = $same | append $u }}{{ end -}}
+{{- end }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ "出海ABC" }},
+  "alternateName": [
+    {{ "fwqabc 出海ABC" }},
+    {{ "fwqabc" }}
+  ],
+  "url": {{ site.Home.Permalink }},
+  "description": {{ site.Params.brandLine | default site.Params.description | plainify }},
+  "logo": {{ "brand/logo-512.png" | absURL }},
+  {{- with site.Params.contactEmail }}
+  "email": {{ . }},
+  {{- end }}
+  "sameAs": [
+    {{- range $i, $u := $same }}{{ if $i }}, {{ end }}{{ $u }}{{ end }}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ "出海ABC" }},
+  "alternateName": {{ "fwqabc" }},
+  "url": {{ site.Home.Permalink }},
+  "description": {{ site.Params.brandLine | default site.Params.description | plainify }},
+  "inLanguage": {{ "zh-CN" }},
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ "出海ABC" }},
+    "url": {{ site.Home.Permalink }}
+  }
+}
+</script>
+{{- else if (or .IsPage .IsSection) }}
+{{- $url := replace .Parent.Permalink ( printf "%s" site.Home.Permalink) "" }}
+{{- $lang_url := strings.TrimPrefix ( printf "%s/" .Lang) $url }}
+{{- $bc_list := (split $lang_url "/")}}
+{{- $path := "" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+  {{- range $index, $element := $bc_list }}
+    {{- $path = printf "%s%s/" $path $element }}
+    {{- $bc_pg := site.GetPage $path -}}
+    {{- if (and ($bc_pg) (gt (len . ) 0))}}
+    {{- if (and $index)}}, {{end }}
+    {
+      "@type": "ListItem",
+      "position": {{ add 1 $index  }},
+      "name": {{ $bc_pg.Name }},
+      "item": {{ $bc_pg.Permalink }}
+    }
+    {{- end }}
+  {{- end }}
+  {{- if (ge (len $bc_list) 2) }}, {{end }}
+    {
+      "@type": "ListItem",
+      "position": {{len $bc_list}},
+      "name": {{ .Name }},
+      "item": {{ .Permalink }}
+    }
+  ]
+}
+</script>
+{{- if and .IsPage (not .Params.robotsNoIndex) }}
+{{- $hasDate := ge .PublishDate.Year 2000 }}
+{{- $isArticle := and $hasDate (in (slice "deals" "cases" "free" "review" "guides" "tutorials") .Section) }}
+{{- $lang := "zh-CN" }}{{ if eq .Lang "en" }}{{ $lang = "en" }}{{ end }}
+{{- $desc := .Description | plainify }}{{ if not $desc }}{{ $desc = .Summary | plainify }}{{ end }}
+{{- $pageType := "WebPage" }}{{ if eq .RelPermalink "/about/" }}{{ $pageType = "AboutPage" }}{{ end }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  {{- if $isArticle }}
+  "@type": "BlogPosting",
+  "headline": {{ .Title | plainify }},
+  "name": {{ .Title | plainify }},
+  "description": {{ $desc }},
+  "inLanguage": {{ $lang }},
+  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05-07:00" }},
+  "dateModified": {{ (cond (ge .Lastmod.Year 2000) .Lastmod .PublishDate).Format "2006-01-02T15:04:05-07:00" }},
+  "author": {
+    "@type": "Organization",
+    "name": {{ "出海ABC" }},
+    "url": {{ site.Home.Permalink }}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ .Permalink }}
+  },
+  {{- else }}
+  "@type": {{ $pageType }},
+  "name": {{ .Title | plainify }},
+  "description": {{ $desc }},
+  "url": {{ .Permalink }},
+  "inLanguage": {{ $lang }},
+  {{- end }}
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ "出海ABC" }},
+    "url": {{ site.Home.Permalink }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ "brand/logo-512.png" | absURL }}
+    }
+  }
+}
+</script>
+{{- end }}
+{{- end -}}

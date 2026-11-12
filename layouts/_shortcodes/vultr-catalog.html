@@ -44,7 +44,7 @@
           {{- end }}
           </tbody>
         </table>
-        <div class="vultr-region-actions"><a href="{{ $catalog.affiliate_url }}" class="go-btn" target="_blank" rel="sponsored nofollow noopener">通过推广链接注册</a><span>登录后选择 {{ .city }}（{{ .id }}）及所需套餐；暂缺货的配置需等待补货。</span></div>
+        <div class="vultr-region-actions"><a href="{{ $catalog.affiliate_url }}" class="go-btn" target="_blank" rel="sponsored nofollow noopener">去官网核对并下单</a><small class="aff-tag">含推广</small><span>登录后选择 {{ .city }}（{{ .id }}）及所需套餐；暂缺货的配置需等待补货。</span></div>
       </div>
     </details>
     {{- else }}<p class="vultr-description">本系列暂未确认可用地区。</p>{{ end }}

@@ -25,17 +25,19 @@ bandwagonhost-basic-4g-la2-monthly:
 raksmart:
   cta: 查看 $1.99/月秒杀款
   landing: https://www.raksmart.com/activity/index/page/activitypage_25.html
-  aff: ""
+  aff: "10061"
+  # 2026-11-06：/go/raksmart 改用已核实的账户基础推广入口（落官网首页，需再进 11.11 活动页）
   # WHMCS 推广链接 billing.raksmart.com/whmcs/aff.php?aff=ID，只能落到默认首页；
   # 能否带落地页（或使用联盟后台生成的 raksmart.com/cps/xxxx 活动短链）待核实，TODO 向 RakSmart 客服/后台确认
-  aff_template: https://billing.raksmart.com/whmcs/aff.php?aff={aff}
+  aff_template: https://billing.raksmart.com/whmcs/aff.php?aff={aff}&aff_rtype=affiliate
   thumb: /img/promos/raksmart-2026-double11.webp
   thumb_alt: RakSmart 官方 11.11 年度大促活动页截图
 
 racknerd:
   cta: 查看 RackNerd 特价页
   landing: https://www.racknerd.com/specials/
-  aff: ""
+  aff: "21792"
+  # 2026-11-06：/go/racknerd 改用已核实的 aff=21792 基础入口（落官网首页）
   # 旧优惠文章保留官方普通入口；商家目录使用下方独立推广入口及已核实的产品深链。
   aff_template: https://my.racknerd.com/aff.php?aff={aff}
 

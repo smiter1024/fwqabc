@@ -59,14 +59,14 @@
   {{- end }}
   {{- with first 2 $promos }}
   <aside class="rec-box" aria-label="本站推荐">
-    <h2>看完了？这些活动正在进行</h2>
+    <h2>近期活动</h2>
     <div class="rec-grid">
     {{- range . }}
       <div class="rec-item"{{ with .end }} data-promo-end="{{ . }}"{{ end }}><span class="rec-m">{{ .merchant }}{{ with .badge }} <em>{{ . }}</em>{{ end }}</span>{{ with .price }}<b class="rec-p">{{ . }}</b>{{ end }}<small>{{ .title }}</small>
-      <a class="go-btn go-btn-lg" href="/go/{{ .slug }}/" rel="sponsored nofollow noopener" target="_blank">去官方活动页 →</a></div>
+      <span class="cta-pair"><a class="go-btn go-btn-lg" href="/go/{{ .slug }}/" rel="sponsored nofollow noopener" target="_blank">{{ i18n "ctaPromo" }}</a><small class="aff-tag">{{ i18n "affTag" }}</small></span></div>
     {{- end }}
     </div>
-    <p class="aff-notice">含推广链接，详见 <a href="/disclosure/">推广披露</a>。{{ i18n "ctaNote" }}</p>
+    <p class="aff-notice">以上按钮含推广，详见 <a href="/disclosure/">推广披露</a>。价格以官网结算页为准。</p>
   </aside>
   {{- end }}
   {{- end }}

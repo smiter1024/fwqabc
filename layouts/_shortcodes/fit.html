@@ -1,0 +1,5 @@
+{{- /* 适合谁 / 不适合谁 决策框：{{< fit label="适合谁与不适合谁" >}}Markdown 段落{{< /fit >}}；内容用 Markdown 写，<p class=fit-meta> 用 meta 参数 */ -}}
+<aside class="fit-box" aria-label="{{ .Get "label" | default "适合谁与不适合谁" }}">
+{{ .Inner | markdownify }}
+{{- with .Get "meta" }}<p class="fit-meta">{{ . | markdownify }}</p>{{ end }}
+</aside>

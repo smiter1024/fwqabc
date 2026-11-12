@@ -1,9 +1,11 @@
 ---
 title: "联系与纠错"
 url: "/contact/"
-description: "联系出海ABC：商务合作、价格纠错与建议。"
+description: "价格、活动或链接有误，请来信并附上文章链接和官方来源。也接受合作咨询。"
 ShowToc: false
 ShowReadingTime: false
+date: 2026-11-01T12:00:00+08:00
+lastmod: 2026-11-06T18:00:00+08:00
 ---
 
 发现价格、活动时间或链接有误？欢迎指出，我们核实后会更新文章，并在文末「更新日志」注明。

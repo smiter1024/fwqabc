@@ -1,10 +1,12 @@
 # 按钮文案（统一在此修改）
 - id: ctaPromo
-  translation: 去官方活动页
+  translation: 去官网核对并下单
 - id: ctaPick
-  translation: 官方活动页
+  translation: 去官网核对并下单
 - id: ctaNote
-  translation: 跳转官方页面 · 价格以官网为准
+  translation: 不让你多付钱，也不换结论 · 价格以官网结算页为准
+- id: affTag
+  translation: 含推广
 # PaperMod 界面中文
 - id: prev_page
   translation: "上一页"

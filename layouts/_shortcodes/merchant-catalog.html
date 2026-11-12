@@ -11,12 +11,12 @@
   <p class="merchant-catalog-source">核对日期：<time datetime="{{ .checked_on }}">{{ .checked_on }}</time> · {{ .currency_note | default "价格单位为美元" }} · <a href="{{ "/disclosure/" | relURL }}">推广披露</a></p>
   <div class="merchant-catalog-notice">
     <p>下方保留官方计费周期。年付金额为整年总价，小时计费的官方月价单独列出；未明确的账期和费用以官网确认为准。库存与最终费用以配置页为准。</p>
-    <p>{{ .link_scope }}推广佣金不等于购买者折扣或赠金。</p>
+    <p>{{ .link_scope }}推广佣金不等于购买者折扣或赠金；走推广入口不让你多付钱，也不换结论。</p>
     <div class="merchant-catalog-affiliates">
       {{- range where hugo.Data.affiliate_programs.programs "merchant" $catalog.merchant }}
-      <a href="{{ .url }}" target="_blank" rel="sponsored nofollow noopener">{{ if eq $merchantID "raksmart" }}{{ .name }}入口{{ else }}通过推广入口访问官网{{ end }}</a>
-      {{- range .landing_links }}<a href="{{ .url }}" target="_blank" rel="sponsored nofollow noopener">{{ .name }}</a>{{ end }}
-      {{- end }}
+      <a href="{{ .url }}" target="_blank" rel="sponsored nofollow noopener">去官网核对并下单{{ if and (eq $merchantID "raksmart") (in .name "一次性") }}（备用入口）{{ end }}</a>
+      {{- range .landing_links }}<a href="{{ .url }}" target="_blank" rel="sponsored nofollow noopener">去官网核对并下单（{{ replace (replace .name " 分类推广入口" "") "分类推广入口" "" }}）</a>{{ end }}
+      {{- end }}<small class="aff-tag">含推广</small>
     </div>
   </div>
   <nav class="merchant-catalog-nav" aria-label="{{ .merchant }} 产品系列">
@@ -126,7 +126,7 @@
                 <td class="merchant-catalog-product-links">
                   {{- if in (slice "ethernetservers" "interserver") $merchantID }}
                     {{- with (index .offers 0).affiliate_url }}
-                  <a href="{{ . }}" target="_blank" rel="sponsored nofollow noopener" aria-label="{{ $product.name }} 推广入口，进入官网后选择配置">推广入口</a>
+                  <a href="{{ . }}" target="_blank" rel="sponsored nofollow noopener" aria-label="{{ $product.name }}：去官网核对并下单（含推广），进入官网后选择配置">去官网核对并下单</a><small class="aff-tag">含推广</small>
                     {{- end }}
                   {{- end }}
                   {{- if and $isCloudCone (eq .availability_status "sold_out") }}
