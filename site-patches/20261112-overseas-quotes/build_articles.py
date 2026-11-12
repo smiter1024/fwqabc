@@ -410,14 +410,9 @@ CTA_EN = '''<div class="service-cta">
 
 DESC_ZH = (
     "出海第一步是设立公司主体。本页公布海外公司注册及常见配套项目的用户报价，银行开户等项目可询价。"
-    "出海ABC提供对接服务，先行核对报价与需求，再由具备相应资质和牌照的承办供应商受理办理。"
-    "服务费用请直接支付予承办供应商。护照及身份证件须通过该供应商的正式渠道提交。本站不代收款项，亦不在网页收集或留存证件资料。"
 )
 DESC_EN = (
-    "The first step in going overseas is to establish a company. This page publishes user quotes for overseas company registration and common related services. "
-    "Bank accounts and certain other items are available on inquiry. 出海ABC provides coordination: the quote and requirements are reviewed first, "
-    "then a licensed fulfilling supplier accepts and completes the filing. Fees should be paid directly to that supplier, and passports or identity documents "
-    "should be submitted through the supplier’s official process. This site does not collect payment or retain identity documents on the page."
+    "The first step in going overseas is to establish a company. This page publishes user quotes for overseas company registration and common related services. Bank accounts and certain other items are available on inquiry."
 )
 
 
@@ -440,7 +435,7 @@ def build_zh() -> str:
 <p>出海ABC提供海外公司注册对接服务：先行核对报价与需求，再由具备相应资质和牌照的承办供应商受理办理。本页公布用户报价，便于比较与核对。</p>
 <p class="role-sub">服务费用请直接支付予承办供应商。护照及身份证件须通过该供应商的正式渠道提交。本站不代收款项，亦不在网页收集或留存证件资料。</p>
 </div>
-<p>中小企业、个体户、源头工厂及原厂在签署合同、收取货款、办理报关或设立经营网点前，一般需先完成公司主体设立。出海ABC先行提供对接服务，再由承办供应商受理。以下为用户报价，整理日期为 2026年11月12日。除另行标明美元或新加坡元外，金额以人民币计。如官费以美元、港币或韩元收取，本页保留原币种，不予折算。</p>
+<p>中小企业、个体户、源头工厂及原厂在签署合同、收取货款、办理报关或设立经营网点前，一般需先完成公司主体设立。以下为用户报价，整理日期为 2026年11月12日。除另行标明美元或新加坡元外，金额以人民币计。如官费以美元、港币或韩元收取，本页保留原币种，不予折算。</p>
 <p class="quote-disclaimer">本页报价可能因信息更新滞后或成本变动而与办理时不一致，解释以最新书面报价为准。</p>
 <p>银行开户、暂停办理或需另行协商的项目，以及名称中含基金会、协会、联盟等字样的特殊主体，均需询价，本页不另行估算价格。具体开户安排以咨询时说明为准，本页不列示银行名称。</p>
 {CTA_ZH}
@@ -475,7 +470,6 @@ def build_zh() -> str:
 <li>所列价格不含税点；如需开具发票，税费另行计算。美国及英国文件默认以 PDF 交付；如需纸质文件及公司印章，另计 200 元。</li>
 <li>最终解释以书面确认为准。</li>
 </ul>
-<p>出海ABC提供对接服务，先行核对报价与需求，再由具备相应资质和牌照的承办供应商受理办理。服务费用请直接支付予承办供应商。护照及身份证件须通过该供应商的正式渠道提交。本站不代收款项，亦不在网页收集或留存证件资料。</p>
 <h2 id="常见问题">常见问题<a hidden class="anchor" aria-hidden="true" href="#常见问题">#</a></h2>
 <div class="faq">
 <details open><summary>Q：资质和牌照由谁持有？</summary><p>A：办理所需资质和牌照由承办供应商持有，并由其受理及办理。出海ABC提供对接服务，先行核对报价与需求。</p></details>
@@ -510,7 +504,7 @@ def build_en() -> str:
 <p>出海ABC provides a coordination service for overseas company registration. The quote and requirements are reviewed first; a licensed fulfilling supplier then accepts and completes the filing. User quotes are published on this page for comparison and verification.</p>
 <p class="role-sub">Fees should be paid directly to that supplier. Passports and identity documents must be submitted through the supplier’s official process. This site does not collect payment, and does not retain identity documents on the page.</p>
 </div>
-<p>Small and medium-sized enterprises, sole proprietors, and source manufacturers generally need to establish a company before entering into contracts, receiving payment, completing customs formalities, or opening a place of business. 出海ABC provides coordination first; the fulfilling supplier then accepts the case. The figures below are user quotes, compiled on 12 November 2026. Amounts are in renminbi unless a row is marked in US dollars or Singapore dollars. Official fees charged in US dollars, Hong Kong dollars, or Korean won remain in that currency and are not converted on this page.</p>
+<p>Small and medium-sized enterprises, sole proprietors, and source manufacturers generally need to establish a company before entering into contracts, receiving payment, completing customs formalities, or opening a place of business. The figures below are user quotes, compiled on 12 November 2026. Amounts are in renminbi unless a row is marked in US dollars or Singapore dollars. Official fees charged in US dollars, Hong Kong dollars, or Korean won remain in that currency and are not converted on this page.</p>
 <p class="quote-disclaimer">Quotes on this page may differ from the price at the time of filing because of delayed updates or changes in cost. The latest written quote is authoritative.</p>
 <p>Bank accounts, items that are suspended or subject to separate agreement, and special entities whose names include words such as foundation, association, or alliance, are available on inquiry. This page does not estimate a price for those items. Bank names are not listed; available arrangements are confirmed at the time of inquiry.</p>
 {CTA_EN}
@@ -545,7 +539,6 @@ def build_en() -> str:
 <li>The listed prices exclude any tax point; if an invoice is required, tax is calculated separately. Documents for the United States and the United Kingdom are delivered as PDF by default; paper documents and a company seal are an additional RMB 200.</li>
 <li>The written confirmation is authoritative.</li>
 </ul>
-<p>出海ABC provides coordination: the quote and requirements are reviewed first, then a licensed fulfilling supplier accepts and completes the filing. Fees should be paid directly to the supplier. Passports and identity documents must be submitted through the supplier’s official process. This site does not collect payment or retain identity documents on the page.</p>
 <h2 id="questions">Questions<a hidden class="anchor" aria-hidden="true" href="#questions">#</a></h2>
 <div class="faq">
 <details open><summary>Q: Who holds the licences and qualifications?</summary><p>A: The fulfilling supplier holds the licences required for the filing and accepts and completes the work. 出海ABC provides coordination, beginning with a review of the quote and requirements.</p></details>

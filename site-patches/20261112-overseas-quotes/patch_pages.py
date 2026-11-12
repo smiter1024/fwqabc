@@ -9,14 +9,9 @@ OUT = ROOT / "out"
 
 DESC_ZH = (
     "出海第一步是设立公司主体。本页公布海外公司注册及常见配套项目的用户报价，银行开户等项目可询价。"
-    "出海ABC提供对接服务，先行核对报价与需求，再由具备相应资质和牌照的承办供应商受理办理。"
-    "服务费用请直接支付予承办供应商。护照及身份证件须通过该供应商的正式渠道提交。本站不代收款项，亦不在网页收集或留存证件资料。"
 )
 DESC_EN = (
-    "The first step in going overseas is to establish a company. This page publishes user quotes for overseas company registration and common related services. "
-    "Bank accounts and certain other items are available on inquiry. 出海ABC provides coordination: the quote and requirements are reviewed first, "
-    "then a licensed fulfilling supplier accepts and completes the filing. Fees should be paid directly to that supplier, and passports or identity documents "
-    "should be submitted through the supplier’s official process. This site does not collect payment or retain identity documents on the page."
+    "The first step in going overseas is to establish a company. This page publishes user quotes for overseas company registration and common related services. Bank accounts and certain other items are available on inquiry."
 )
 
 FAQ_ZH = {
@@ -152,7 +147,9 @@ def patch(src: str, article_inner: str, desc: str, faq: dict) -> str:
         "Step 1 of going overseas: set up a company. This page publishes user quotes for overseas company registration and common add-ons. Bank accounts and some other items are by inquiry. 出海ABC provides consultation and introduces you to the fulfilling supplier, who holds the required licences and completes the work. Please pay that supplier directly, and submit passports or identity documents through the supplier’s official process. This site does not collect payment or keep identity documents on the page.",
         "出海第一步：先立主体。本页公布海外公司注册及常见配套的用户报价，银行开户等项目可询价。出海ABC提供对接服务，先核对报价和需求，再由具备相应资质和牌照的承办供应商受理办理。费用请直接付给该供应商，护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。",
         "Step 1 of going overseas: set up a company. This page publishes user quotes for overseas company registration and common add-ons. Bank accounts and some other items are by inquiry. 出海ABC provides the coordination: we review the quote and your needs first, then a licensed fulfilling supplier accepts and handles the filing. Please pay that supplier directly, and submit passports or identity documents through the supplier’s official process. This site does not collect payment or keep identity documents on the page.",
-    ]
+    
+        '出海第一步是设立公司主体。本页公布海外公司注册及常见配套项目的用户报价，银行开户等项目可询价。出海ABC提供对接服务，先行核对报价与需求，再由具备相应资质和牌照的承办供应商受理办理。服务费用请直接支付予承办供应商。护照及身份证件须通过该供应商的正式渠道提交。本站不代收款项，亦不在网页收集或留存证件资料。',
+        'The first step in going overseas is to establish a company. This page publishes user quotes for overseas company registration and common related services. Bank accounts and certain other items are available on inquiry. 出海ABC provides coordination: the quote and requirements are reviewed first, then a licensed fulfilling supplier accepts and completes the filing. Fees should be paid directly to that supplier, and passports or identity documents should be submitted through the supplier’s official process. This site does not collect payment or retain identity documents on the page.',]
     for old in old_descs:
         html = html.replace(old, desc)
 
