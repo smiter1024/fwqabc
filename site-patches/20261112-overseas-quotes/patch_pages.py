@@ -9,13 +9,13 @@ OUT = ROOT / "out"
 
 DESC_ZH = (
     "出海第一步：先立主体。本页公布海外公司注册及常见配套的用户报价，银行开户等项目可询价。"
-    "出海ABC负责咨询和对接，具体办理由具备相应资质和牌照的承办供应商完成。"
+    "出海ABC提供对接服务，先核对报价和需求，再由具备相应资质和牌照的承办供应商受理办理。"
     "费用请直接付给该供应商，护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。"
 )
 DESC_EN = (
     "Step 1 of going overseas: set up a company. This page publishes user quotes for overseas company registration and common add-ons. "
-    "Bank accounts and some other items are by inquiry. 出海ABC provides consultation and introduces you to the fulfilling supplier, "
-    "who holds the required licences and completes the work. Please pay that supplier directly, and submit passports or identity documents "
+    "Bank accounts and some other items are by inquiry. 出海ABC provides the coordination: we review the quote and your needs first, "
+    "then a licensed fulfilling supplier accepts and handles the filing. Please pay that supplier directly, and submit passports or identity documents "
     "through the supplier’s official process. This site does not collect payment or keep identity documents on the page."
 )
 
@@ -28,7 +28,7 @@ FAQ_ZH = {
             "name": "资质和牌照是谁的？",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "具体办理由具备相应资质和牌照的承办供应商完成。出海ABC负责咨询和对接。",
+                "text": "具备相应资质和牌照的承办供应商负责受理和办理。出海ABC提供对接服务，先帮您核对报价和需求。",
             },
         },
         {
@@ -83,7 +83,7 @@ FAQ_EN = {
             "name": "Who holds the licences and qualifications?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The fulfilling supplier holds the required licences and completes the work. 出海ABC provides consultation and introduces you to that supplier.",
+                "text": "The licensed fulfilling supplier accepts the case and completes the work. 出海ABC provides the coordination, starting with the quote and your needs.",
             },
         },
         {
@@ -107,7 +107,7 @@ FAQ_EN = {
             "name": "Do I have to travel?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Inquiry and document exchange are done by email or WeChat. You are not asked to fly there just to register. Some places have a separate identity check, such as the UK registrar’s online verification, which is explained at the handoff.",
+                "text": "Inquiry and document exchange are done by email or WeChat. You are not asked to fly there just to register. Some places have a separate identity check, such as the UK registrar’s online verification, which is explained when we confirm the details.",
             },
         },
         {
@@ -123,7 +123,7 @@ FAQ_EN = {
             "name": "Which state should I choose?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "This page lists user quotes by state. The choice is made at the handoff for your use case; this page does not choose a state for you. A New York LLC is generally not suggested because of the publication step; ask about an INC, or another state.",
+                "text": "This page lists user quotes by state. The choice is confirmed with you when the plan is settled; this page does not choose a state for you. A New York LLC is generally not suggested because of the publication step; ask about an INC, or another state.",
             },
         },
     ],
@@ -148,6 +148,8 @@ def patch(src: str, article_inner: str, desc: str, faq: dict) -> str:
         "Step 1 of going overseas: set up a company so contracts, payments, customs, and a storefront have an entity that can sign. This page introduces the service. It does not quote figures or take payment.",
         "出海第一步：先立主体。本页公布海外公司注册及常见配套的用户报价，银行开户等项目可询价。办理所需的完整资质和牌照由承办供应商持有；出海ABC负责获客，并把咨询交给供应商对接。本站不代收款项，也不在网页上收集证件。",
         "Step 1 of going overseas: set up a company. This page publishes user quotes for overseas company registration and common add-ons. Bank accounts and some other items are by inquiry. The licences and qualifications needed to file sit with the fulfilling supplier. 出海ABC only acquires customers and hands inquiries to that supplier. This site does not take payment or collect ID documents.",
+        "出海第一步：先立主体。本页公布海外公司注册及常见配套的用户报价，银行开户等项目可询价。出海ABC负责咨询和对接，具体办理由具备相应资质和牌照的承办供应商完成。费用请直接付给该供应商，护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。",
+        "Step 1 of going overseas: set up a company. This page publishes user quotes for overseas company registration and common add-ons. Bank accounts and some other items are by inquiry. 出海ABC provides consultation and introduces you to the fulfilling supplier, who holds the required licences and completes the work. Please pay that supplier directly, and submit passports or identity documents through the supplier’s official process. This site does not collect payment or keep identity documents on the page.",
     ]
     for old in old_descs:
         html = html.replace(old, desc)

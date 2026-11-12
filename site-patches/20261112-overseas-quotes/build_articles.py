@@ -297,7 +297,7 @@ PLACES = [
     row("韩国", "Korea", "12200 元", "RMB 12,200", "4–8 周", "4–8 weeks",
         "年审 3000 元起；地址续费 6000 元/年", "Annual review from RMB 3,000; address renewal RMB 6,000 a year",
         "后续记账报税、手机月租在报价说明中按韩币计，对接时确认，本页不折算。",
-        "Bookkeeping and mobile-plan fees are quoted in Korean won in the source notes and are confirmed at handoff; this page does not convert them."),
+        "Bookkeeping and mobile-plan fees are quoted in Korean won in the source notes and are confirmed when the plan is settled; this page does not convert them."),
     row("新加坡公司注册", "Singapore company registration", "6700 元", "RMB 6,700", "1–2 周", "1–2 weeks",
         "年审 5000 元（含挂名董事、秘书、注册地址和零报税）",
         "Annual review RMB 5,000 (includes a nominee director, secretary, registered address, and a nil tax return)"),
@@ -393,14 +393,14 @@ def table(rows, lang, cols):
 
 
 CTA_ZH = '''<div class="service-cta">
-<p>要按下面的报价办理，或询银行开户和其他未列出的项目，发邮件即可。主题请写「咨询海外公司注册」。我们看到后拉微信群，再转给供应商对接。</p>
+<p>要按本页报价办理，或询银行开户和其他未列出的项目，发邮件即可。主题请写「咨询海外公司注册」。我们看到后会拉微信群，安排承办供应商受理。</p>
 <p><a class="service-cta-btn" href="mailto:chuhaiABC@outlook.com?subject=%E5%92%A8%E8%AF%A2%E6%B5%B7%E5%A4%96%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C">邮件咨询海外公司注册</a></p>
 <p>微信：出海ABC（四川成都）。扫码添加。这里没有单独的文字微信号。</p>
 <p><img src=/images/contact/wechat.jpg alt="出海ABC 微信二维码" width=280 height=381></p>
 </div>'''
 
 CTA_EN = '''<div class="service-cta">
-<p>To proceed on a published quote, or to inquire about a bank account or another item not listed here, send an email with the subject line “Overseas company registration”. After we see it, we open a WeChat group and hand the inquiry to the supplier.</p>
+<p>To proceed on a published quote, or to inquire about a bank account or another item not listed here, send an email with the subject line “Overseas company registration”. After we see it, we open a WeChat group and arrange for the supplier to accept the case.</p>
 <p><a class="service-cta-btn" href="mailto:chuhaiABC@outlook.com?subject=Overseas%20company%20registration">Email about company registration</a></p>
 <p>WeChat: 出海ABC (Chengdu, Sichuan). Scan the card to add the account. There is no separate text WeChat ID.</p>
 <p><img src=/images/contact/wechat.jpg alt="出海ABC WeChat QR code" width=280 height=381></p>
@@ -408,13 +408,13 @@ CTA_EN = '''<div class="service-cta">
 
 DESC_ZH = (
     "出海第一步：先立主体。本页公布海外公司注册及常见配套的用户报价，银行开户等项目可询价。"
-    "出海ABC负责咨询和对接，具体办理由具备相应资质和牌照的承办供应商完成。"
+    "出海ABC提供对接服务，先核对报价和需求，再由具备相应资质和牌照的承办供应商受理办理。"
     "费用请直接付给该供应商，护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。"
 )
 DESC_EN = (
     "Step 1 of going overseas: set up a company. This page publishes user quotes for overseas company registration and common add-ons. "
-    "Bank accounts and some other items are by inquiry. 出海ABC provides consultation and introduces you to the fulfilling supplier, "
-    "who holds the required licences and completes the work. Please pay that supplier directly, and submit passports or identity documents "
+    "Bank accounts and some other items are by inquiry. 出海ABC provides the coordination: we review the quote and your needs first, "
+    "then a licensed fulfilling supplier accepts and handles the filing. Please pay that supplier directly, and submit passports or identity documents "
     "through the supplier’s official process. This site does not collect payment or keep identity documents on the page."
 )
 
@@ -435,10 +435,10 @@ def build_zh() -> str:
 <li><a href="#常见问题" aria-label="常见问题">常见问题</a></li>
 </ul></div></details><div class="post-content md-content">'''
     body = f'''<div class="role-notice">
-<p>出海ABC负责咨询和对接，具体办理由具备相应资质和牌照的承办供应商完成。</p>
+<p>出海ABC提供海外公司注册的对接服务。我们先帮您核对报价、沟通需求，再由具备相应资质和牌照的承办供应商受理办理。本页报价公开，方便比较和核对。</p>
 <p class="role-sub">费用请直接付给该供应商，护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。</p>
 </div>
-<p>中小企业、个体户、源头工厂要签合同、收款、报关或开店，需要先有一个能签字的公司。下面是用户报价，整理日期为 2026年11月12日。除另行标明美元、新币外，金额为人民币。官费若以美元、港币或韩币计，保持原币种，不在本页折算。</p>
+<p>中小企业、个体户、源头工厂要签合同、收款、报关或开店，需要先有一个能签字的公司。出海ABC先提供对接服务，再由承办供应商受理。下面是用户报价，整理日期为 2026年11月12日。除另行标明美元、新币外，金额为人民币。官费若以美元、港币或韩币计，保持原币种，不在本页折算。</p>
 <p class="quote-disclaimer">本页报价可能有更新滞后，也会随成本波动，解释以最新书面报价为准。</p>
 <p>银行开户、已暂停或需另议的项目，以及名称中含基金会、协会、联盟一类用词的特殊主体，一律询价，不在本页另行估价格。这里不点名银行。</p>
 {CTA_ZH}
@@ -473,10 +473,10 @@ def build_zh() -> str:
 <li>价格不含税点；如需开票，票点另计。美国、英国交付文件默认 PDF；如需纸质资料和公章，另加 200 元。</li>
 <li>最终以书面确认为准。</li>
 </ul>
-<p>出海ABC负责咨询和对接，具体办理由具备相应资质和牌照的承办供应商完成。费用请直接付给该供应商，护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。</p>
+<p>出海ABC提供对接服务，先核对报价和需求，再由具备相应资质和牌照的承办供应商受理办理。费用请直接付给该供应商，护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。</p>
 <h2 id="常见问题">常见问题<a hidden class="anchor" aria-hidden="true" href="#常见问题">#</a></h2>
 <div class="faq">
-<details open><summary>Q：资质和牌照是谁的？</summary><p>A：具体办理由具备相应资质和牌照的承办供应商完成。出海ABC负责咨询和对接。</p></details>
+<details open><summary>Q：资质和牌照是谁的？</summary><p>A：具备相应资质和牌照的承办供应商负责受理和办理。出海ABC提供对接服务，先帮您核对报价和需求。</p></details>
 <details open><summary>Q：钱付给谁？</summary><p>A：费用请直接付给承办供应商。护照和证件通过供应商的正式渠道提交。本站不代收款项，也不在网页上留存证件资料。</p></details>
 <details open><summary>Q：为什么有的项目没有报价？</summary><p>A：银行开户、已暂停或需另议的项目，以及未列出的特殊主体，请发邮件或微信询价。我们不在这里另行估价格。</p></details>
 <details open><summary>Q：要不要本人到场？</summary><p>A：咨询和交资料都在邮件或微信里完成，不为了注册要求你飞到当地。有的地方另有身份核验，例如英国注册处要在线认证，对接时会单独说明。</p></details>
@@ -505,10 +505,10 @@ def build_en() -> str:
 <li><a href="#questions" aria-label="Questions">Questions</a></li>
 </ul></div></details><div class="post-content md-content">'''
     body = f'''<div class="role-notice">
-<p>出海ABC provides consultation and introduces you to the fulfilling supplier. That supplier holds the required licences and completes the work.</p>
+<p>出海ABC provides a coordination service for overseas company registration. We first review the quote and your needs, then a licensed fulfilling supplier accepts and handles the filing. Prices are published here so you can compare and check them.</p>
 <p class="role-sub">Please pay that supplier directly, and submit passports or identity documents through the supplier’s official process. This site does not collect payment, and does not keep identity documents on the page.</p>
 </div>
-<p>A small company, a sole proprietor, or a factory that sells its own goods needs a company that can sign before contracts, payments, customs, or a storefront. The figures below are user quotes, compiled on 12 November 2026. Amounts are in renminbi unless a row is marked in US dollars or Singapore dollars. Official fees charged in US dollars, Hong Kong dollars, or Korean won stay in that currency and are not converted on this page.</p>
+<p>A small company, a sole proprietor, or a factory that sells its own goods needs a company that can sign before contracts, payments, customs, or a storefront. 出海ABC first provides the coordination, then the fulfilling supplier accepts the case. The figures below are user quotes, compiled on 12 November 2026. Amounts are in renminbi unless a row is marked in US dollars or Singapore dollars. Official fees charged in US dollars, Hong Kong dollars, or Korean won stay in that currency and are not converted on this page.</p>
 <p class="quote-disclaimer">Quotes on this page may lag behind updates and may move with costs. The latest written quote is what counts.</p>
 <p>Bank accounts, items that are paused or to be agreed, and special entities whose names include words such as foundation, association, or alliance, are by inquiry. This page does not invent a price for them, and it does not name banks.</p>
 {CTA_EN}
@@ -543,15 +543,15 @@ def build_en() -> str:
 <li>Prices exclude a tax point; invoicing, if needed, is billed separately. US and UK deliveries are PDF by default; paper documents and a company seal add RMB 200.</li>
 <li>The written confirmation is what counts.</li>
 </ul>
-<p>出海ABC provides consultation and introduces you to the fulfilling supplier. That supplier holds the required licences and completes the work. Please pay the supplier directly, and submit passports or identity documents through the supplier’s official process. This site does not collect payment or keep identity documents on the page.</p>
+<p>出海ABC provides the coordination: we review the quote and your needs first, then a licensed fulfilling supplier accepts and handles the filing. Please pay the supplier directly, and submit passports or identity documents through the supplier’s official process. This site does not collect payment or keep identity documents on the page.</p>
 <h2 id="questions">Questions<a hidden class="anchor" aria-hidden="true" href="#questions">#</a></h2>
 <div class="faq">
-<details open><summary>Q: Who holds the licences and qualifications?</summary><p>A: The fulfilling supplier holds the required licences and completes the work. 出海ABC provides consultation and introduces you to that supplier.</p></details>
+<details open><summary>Q: Who holds the licences and qualifications?</summary><p>A: The licensed fulfilling supplier accepts the case and completes the work. 出海ABC provides the coordination, starting with the quote and your needs.</p></details>
 <details open><summary>Q: Who do I pay?</summary><p>A: Please pay the fulfilling supplier directly. Passports and identity documents are submitted through the supplier’s official process. This site does not collect payment or keep identity documents on the page.</p></details>
 <details open><summary>Q: Why are some items without a quote?</summary><p>A: Bank accounts, items that are paused or to be agreed, and special entities not listed here are by email or WeChat inquiry. This page does not invent a price for them.</p></details>
-<details open><summary>Q: Do I have to travel?</summary><p>A: Inquiry and document exchange are done by email or WeChat. You are not asked to fly there just to register. Some places have a separate identity check, such as the UK registrar’s online verification, which is explained at the handoff.</p></details>
+<details open><summary>Q: Do I have to travel?</summary><p>A: Inquiry and document exchange are done by email or WeChat. You are not asked to fly there just to register. Some places have a separate identity check, such as the UK registrar’s online verification, which is explained when we confirm the details.</p></details>
 <details open><summary>Q: Can I file without an SSN?</summary><p>A: Yes, you can inquire without an SSN. If you already have an SSN or ITIN, include it when you prepare documents. User quotes for US state registrations include an EIN application by default.</p></details>
-<details open><summary>Q: Which state should I choose?</summary><p>A: This page lists user quotes by state. The choice is made at the handoff for your use case; this page does not choose a state for you. A New York LLC is generally not suggested because of the publication step; ask about an INC, or another state.</p></details>
+<details open><summary>Q: Which state should I choose?</summary><p>A: This page lists user quotes by state. The choice is confirmed with you when the plan is settled; this page does not choose a state for you. A New York LLC is generally not suggested because of the publication step; ask about an INC, or another state.</p></details>
 <details open><summary>Q: Which currency are the quotes in?</summary><p>A: Amounts are in renminbi unless a row is marked in US dollars or Singapore dollars. Official fees charged in US dollars, Hong Kong dollars, or Korean won stay in that currency and are confirmed at the time of engagement.</p></details>
 </div>
 <p>This page includes an affiliate disclosure. See <a href=/en/disclosure/>Disclosure</a>.</p>
