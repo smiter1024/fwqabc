@@ -420,6 +420,12 @@ def patch_sitemaps(out_root: Path):
     ]:
         tree = ET.parse(src)
         root = tree.getroot()
+        # English site has no posts/cases. An empty urlset makes Search Console
+        # report "XML 标记缺失" (urlset missing url).
+        for sm in list(root.findall("s:sitemap", NS)):
+            loc = (sm.findtext("s:loc", default="", namespaces=NS) or "").strip()
+            if loc == "https://fwqabc.com/en/sitemap-posts.xml":
+                root.remove(sm)
         for sm in root.findall("s:sitemap", NS):
             existing = sm.find("s:lastmod", NS)
             if existing is None:

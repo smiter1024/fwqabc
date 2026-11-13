@@ -7,3 +7,4 @@
 - `/knowledge/chuhai-independent-site/` 建站与独立站
 - 首页与关于页成本地图为该专页加上入口
 - 站点地图 lastmod、`llms.txt`（含海外公司报价页）
+- 从 `/en/sitemap.xml` 移除空的 `/en/sitemap-posts.xml`（英文站暂无文章，空 urlset 会让 Search Console 报 XML 标记缺失）
