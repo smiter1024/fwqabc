@@ -1,0 +1,88 @@
+/* 2026-11-12 overseas company public quotes */
+
+.role-notice {
+  border-left: 3px solid var(--c-btn, #f24615);
+  padding: 14px 16px 14px 18px;
+  margin: 0 0 1.5em;
+  background: rgba(242, 70, 21, 0.06);
+}
+.role-notice p {
+  margin: 0;
+  color: var(--primary, #1a1a1a);
+  font-weight: 600;
+  line-height: 1.65;
+}
+.role-notice .role-sub {
+  margin-top: 8px;
+  font-weight: 400;
+  color: var(--secondary, #5c5c5c);
+}
+
+.quote-included {
+  color: var(--secondary, #5c5c5c);
+  margin: 0 0 1em;
+}
+.quote-asof {
+  font-size: .92em;
+  color: var(--secondary, #6c6c6c);
+  margin: 0 0 1.1em;
+}
+
+.quote-table-wrap {
+  overflow-x: auto;
+  margin: 0 0 1.4em;
+  -webkit-overflow-scrolling: touch;
+}
+.quote-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .95em;
+  line-height: 1.5;
+}
+.quote-table th {
+  text-align: left;
+  font-weight: 700;
+  color: var(--primary, #1a1a1a);
+  border-bottom: 2px solid var(--border, #e6e6e6);
+  padding: 8px 12px 8px 0;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+.quote-table td {
+  border-bottom: 1px solid var(--border, #eee);
+  padding: 10px 12px 10px 0;
+  vertical-align: top;
+  color: var(--secondary, #555);
+}
+.quote-table td.price,
+.quote-table td.fee {
+  font-weight: 700;
+  color: var(--primary, #1a1a1a);
+  white-space: normal;
+}
+.quote-table td.note {
+  min-width: 12em;
+  font-size: .92em;
+}
+.quote-table tr:last-child td {
+  border-bottom: 1px solid var(--border, #eee);
+}
+
+.quote-fn {
+  font-size: .92em;
+  color: var(--secondary, #5c5c5c);
+  margin: 0 0 .7em;
+}
+.place-list {
+  color: var(--content, #333);
+}
+
+.quote-disclaimer {
+  border-left: 3px solid var(--c-btn, #f24615);
+  padding: 10px 14px 10px 16px;
+  margin: 0 0 1.4em;
+  background: rgba(242, 70, 21, 0.04);
+  color: var(--primary, #1a1a1a);
+  font-weight: 600;
+  line-height: 1.65;
+}

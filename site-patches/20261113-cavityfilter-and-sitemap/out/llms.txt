@@ -1,0 +1,43 @@
+# 出海ABC
+
+> 出海ABC，免费帮中国出海的中小企业、个体户、源头工厂和原厂，把出海该花的钱、该办的事讲明白，少花钱、少踩坑。
+
+站点：https://fwqabc.com/
+英文站点：https://fwqabc.com/en/
+
+本站提供可核对的出海成本说明和服务器选型资料，不代售服务器，不卖排名或收录位。价格与活动规则来自商家官网，并注明核对日期（北京时间）；没有自购实测，不下性能结论。部分链接含推广佣金，会标明，不让你多付钱，也不换结论。
+
+## 核心页面
+
+- [首页与出海成本地图](https://fwqabc.com/)：立主体、开门面、把货送出去、把钱收回来
+- [关于我们](https://fwqabc.com/about/)：核实方法、更新与纠错
+- [推广披露](https://fwqabc.com/disclosure/)：推广佣金如何标明
+- [联系与纠错](https://fwqabc.com/contact/)：纠错请附文章链接和官方来源
+- [商家目录](https://fwqabc.com/merchants/)：已收录商家的套餐与官方来源
+- [优惠促销](https://fwqabc.com/deals/)：已核对的活动与限制
+- [实测案例](https://fwqabc.com/cases/)：自购机器的访问实测，以及本站参与搭建的独立站记录
+- [线路专题](https://fwqabc.com/routes/)：CN2 GIA、9929、CMIN2 等说明
+- [建站与独立站](https://fwqabc.com/knowledge/chuhai-independent-site/)：展示站与卖货站、域名与企业邮箱、多语言和上线维护
+- [海外公司注册](https://fwqabc.com/services/overseas-company/)：公布海外公司注册及常见配套项目的用户报价，银行开户等项目可询价
+- [出海独立站怎么选服务器](https://fwqabc.com/knowledge/chuhai-independent-site-server/)：先看访客在哪，再决定线路、机房、配置和付款周期
+
+## 近期文章
+
+- [康讯通独立站建站记录：从域名、服务器到上线（cavityfilter.com）](https://fwqabc.com/cases/cavityfilter-site-build-2026-11/)
+- [建站与独立站](https://fwqabc.com/knowledge/chuhai-independent-site/)
+
+- [国内访客为主，独立站该不该上 CN2](https://fwqabc.com/knowledge/domestic-visitors-cn2/)
+- [独立站访客主要在海外时，服务器怎么选](https://fwqabc.com/knowledge/overseas-visitors-server/)
+- [独立站要不要上精品线路](https://fwqabc.com/knowledge/premium-line-when/)
+- [独立站服务器年付和月付差多少，续费会不会更贵](https://fwqabc.com/knowledge/monthly-vs-yearly-vps/)
+
+- [2026 双11 国外 VPS 优惠汇总](https://fwqabc.com/deals/2026-double11-vps-deals/)
+- [搬瓦工 2026 优惠码与方案对比](https://fwqabc.com/deals/bandwagonhost-coupon-2026/)
+- [RakSmart 2026 双11 黑五活动规则](https://fwqabc.com/deals/raksmart-2026-double11-black-friday/)
+- [RF-KEY射频元器件商城海外访问实测](https://fwqabc.com/cases/rfkey-overseas-check-2026-11/)
+- [免费服务器与新用户赠金汇总 2026](https://fwqabc.com/free/free-cloud-credits-2026/)
+- [Oracle Cloud Always Free 申请指南 2026](https://fwqabc.com/free/oracle-cloud-always-free-guide-2026/)
+
+## 可选
+
+- [完整站点地图](https://fwqabc.com/sitemap.xml)
