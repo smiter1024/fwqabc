@@ -1,0 +1,67 @@
+<p>核对日期：2026-11-13（北京时间）。本页是出海ABC为深圳康讯通（Kangxuntong）搭建独立站的第一方记录。文中只写已核对的注册、解析、邮箱、部署和站点结构，不是对某台机器的访问测速，也没有自购套餐做性能测试，因此不对加载速度或线路质量下结论。</p>
+<h2 id=说明关系>说明关系<a hidden class=anchor aria-hidden=true href=#说明关系>#</a></h2>
+<p>该站面向海外买家，介绍康讯通在深圳生产的腔体滤波器、双工器与合路器，并接受询价。出海ABC负责从域名、解析、企业邮箱、源站部署到页面搭建与后续核对。产品规格以工厂原稿为准，没有在原稿中出现的指标，不以推测补全。</p>
+<p>现站地址：<a href="https://cavityfilter.com/" rel="noopener" target=_blank>cavityfilter.com</a>。中文入口在 <a href="https://cavityfilter.com/zh/" rel="noopener" target=_blank>cavityfilter.com/zh/</a>。</p>
+<h2 id=过程摘要>过程摘要<a hidden class=anchor aria-hidden=true href=#过程摘要>#</a></h2>
+<ul>
+<li>2026-11-11 16:43（北京时间），主域名 <code>cavityfilter.com</code> 在 Cloudflare 完成注册；约一分钟后注册复数域名 <code>cavityfilters.com</code>，用于跳转到主站。</li>
+<li>域名解析放在 Cloudflare 的名称服务器上，但页面由源站直接提供。2026-11-13 复核时，响应头为 nginx，未见内容分发网络的回源头。</li>
+<li>企业邮箱使用 Zoho Mail，对外地址为 <code>sales@cavityfilter.com</code>。已配置 SPF 与 DKIM，DMARC 策略为 <code>p=none</code>。</li>
+<li>源站运行 Ubuntu，Web 服务为 nginx 1.28.3。HTTP、www、复数域名以及直接访问服务器地址，均 301 跳转到 <code>https://cavityfilter.com/</code>。证书由 Let’s Encrypt 签发，并覆盖上述主机名。</li>
+<li>站点为中英文静态目录站。2026-11-13 复核时，站点地图共 186 条网址（中英文各 93 条）；与发布稿一致的规格书 PDF 为 70 份。</li>
+</ul>
+<h2 id=域名>域名<a hidden class=anchor aria-hidden=true href=#域名>#</a></h2>
+<p>注册记录来自公开的 RDAP（核对于 2026-11-13，北京时间）。注册商为 Cloudflare, Inc.（IANA 编号 1910）。公开记录中没有付款金额，本页不写域名价格，价格以当时结算页为准。</p>
+<table>
+<thead><tr><th>域名</th><th>注册时间（北京时间）</th><th>到期时间（北京时间）</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td><code>cavityfilter.com</code></td><td>2026-11-11 16:43</td><td>2027-11-11 16:43</td><td>主站</td></tr>
+<tr><td><code>cavityfilters.com</code></td><td>2026-11-11 16:44</td><td>2027-11-11 16:44</td><td>跳转到主站，避免客户多打一个 s 时落到他人名下</td></tr>
+</tbody>
+</table>
+<h2 id=解析与证书>解析与证书<a hidden class=anchor aria-hidden=true href=#解析与证书>#</a></h2>
+<p>名称服务器为 <code>ainsley.ns.cloudflare.com</code> 与 <code>tim.ns.cloudflare.com</code>。主域名、www 以及 <code>cavityfilters.com</code> 的 A 记录指向同一源站地址；复核时没有 AAAA 记录。</p>
+<p>把域名放在 Cloudflare 做注册和解析，不等于已经启用了 Cloudflare 的内容分发网络。本次复核中，页面由源站 nginx 直接返回。</p>
+<p>HTTPS 证书由 Let’s Encrypt 签发，通用名称为 <code>cavityfilter.com</code>，有效期为 2026-11-11 17:38 至 2027-02-09 17:38（北京时间），证书中同时包含 <code>www.cavityfilter.com</code>、<code>cavityfilters.com</code> 与 <code>www.cavityfilters.com</code>。</p>
+<h2 id=企业邮箱>企业邮箱<a hidden class=anchor aria-hidden=true href=#企业邮箱>#</a></h2>
+<p>邮件交换记录指向 Zoho（<code>mx.zoho.com</code>、<code>mx2.zoho.com</code>、<code>mx3.zoho.com</code>）。SPF 为 <code>v=spf1 include:zohomail.com ~all</code>，并有 Zoho 域名验证记录。DKIM 使用 <code>zoho._domainkey.cavityfilter.com</code>。DMARC 为 <code>v=DMARC1; p=none;</code>。套餐档位与年费以 Zoho 当时说明为准，本页不写未核对的邮箱价格。</p>
+<p>网站询价表会发送到 <code>sales@cavityfilter.com</code>，并同时提供电子邮件和即时通讯作为备选。</p>
+<h2 id=服务器与部署>服务器与部署<a hidden class=anchor aria-hidden=true href=#服务器与部署>#</a></h2>
+<p>2026-11-13 可公开核对的事实如下：源站系统为 Ubuntu，Web 服务为 nginx 1.28.3；地址属于 IT7 Networks Inc（AS25820），反向解析落在 <code>16clouds.com</code> 域下。第三方地理库常把该网段标在美国，本页未做访问测速，因此不把机房城市或延迟写成结论，也不写入未在公开结算页核对过的套餐品牌和标价。</p>
+<p>同日复核的跳转如下：</p>
+<table>
+<thead><tr><th>访问地址</th><th>结果</th></tr></thead>
+<tbody>
+<tr><td><code>http://cavityfilter.com/</code>、<code>http://www.cavityfilter.com/</code></td><td>301 至 <code>https://cavityfilter.com/</code></td></tr>
+<tr><td><code>https://www.cavityfilter.com/</code></td><td>301 至 <code>https://cavityfilter.com/</code></td></tr>
+<tr><td><code>http://cavityfilters.com/</code>、<code>https://cavityfilters.com/</code> 及其 www</td><td>301 至 <code>https://cavityfilter.com/</code></td></tr>
+<tr><td>直接访问源站地址的 HTTP 与 HTTPS</td><td>301 至 <code>https://cavityfilter.com/</code></td></tr>
+<tr><td><code>https://cavityfilter.com/</code></td><td>200</td></tr>
+</tbody>
+</table>
+<p>部署方式是将静态页面放到网站根目录，由 nginx 托管；缺页指向站点自己的 404 页面。</p>
+<h2 id=站点结构>站点结构<a hidden class=anchor aria-hidden=true href=#站点结构>#</a></h2>
+<p>这是展示与询价型独立站，用于说明产品并接收询价，不是带购物车和在线收款的卖货站。页面为中英文对照。产品规格按工厂原稿核对；原稿未给出的指标，页面保留为以测试报告或原稿为准。</p>
+<p>2026-11-13（北京时间）从境外解析到源站后自行截取的首页如下，仅用于说明当时页面结构，不是性能测评。</p>
+<figure>
+<img src=/img/cases/cavityfilter-2026-11/home-en.webp alt="cavityfilter.com 英文首页截图，核对于 2026 年 11 月 13 日（北京时间）" width=1280 height=800 loading=lazy decoding=async>
+<figcaption>英文首页，2026-11-13（北京时间）截取。</figcaption>
+</figure>
+<figure>
+<img src=/img/cases/cavityfilter-2026-11/home-zh.webp alt="cavityfilter.com 中文首页截图，核对于 2026 年 11 月 13 日（北京时间）" width=1280 height=800 loading=lazy decoding=async>
+<figcaption>中文首页，2026-11-13（北京时间）截取。</figcaption>
+</figure>
+<h2 id=适用范围>适用范围<a hidden class=anchor aria-hidden=true href=#适用范围>#</a></h2>
+<p>本文只说明这一次从域名到上线的过程，以及 2026-11-13 的复核结果。它适用于源头工厂先建立对外展示和询价站点的情形，不能推广为所有独立站都应使用同一注册商、同一邮箱或同一源站。若要为已上线的站点做海外访问体检，方法与结论边界见 <a href=/cases/rfkey-overseas-check-2026-11/>RF-KEY射频元器件商城海外访问实测</a>，那是另一次自购机器的测试，不能与本文混读。</p>
+<p>服务器如何按访客所在地选择，见 <a href=/knowledge/chuhai-independent-site-server/>出海独立站怎么选服务器</a>。建站判断顺序见 <a href=/knowledge/chuhai-independent-site/>建站与独立站</a>。</p>
+<h2 id=常见问题>常见问题<a hidden class=anchor aria-hidden=true href=#常见问题>#</a></h2>
+<div class=faq>
+<details open><summary>Q：这是不是一次服务器测速？</summary><p>A：不是。本文核对的是域名、解析、证书、邮箱、跳转和站点结构。没有自购实测，不下性能结论。</p></details>
+<details open><summary>Q：为什么不写服务器套餐和价格？</summary><p>A：公开可核对的是系统、Web 服务、网络归属和跳转行为。套餐品牌与标价没有可引用的公开结算页，按本站规则不写。</p></details>
+<details open><summary>Q：域名在 Cloudflare 注册，是不是已经用了它的内容分发网络？</summary><p>A：不一定。本次复核时，解析在 Cloudflare，页面由源站直接返回。两者要分开看。</p></details>
+<details open><summary>Q：复数域名是必须的吗？</summary><p>A：不是必须，但这次一并注册了 <code>cavityfilters.com</code>，并统一跳转到主站，避免客户多输入一个 s 时离开本站。</p></details>
+</div>
+<h2 id=更新日志>更新日志<a hidden class=anchor aria-hidden=true href=#更新日志>#</a></h2>
+<ul>
+<li>2026-11-13：首次发布。核对 RDAP 注册记录、DNS、证书、HTTP 跳转、现网站点地图，并截取中英文首页。</li>
+</ul>

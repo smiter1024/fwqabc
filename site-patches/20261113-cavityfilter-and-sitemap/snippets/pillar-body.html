@@ -1,0 +1,34 @@
+<p>核对日期：2026-11-13（北京时间）。出海独立站要先分清站点类型，再处理域名、企业邮箱、语言版本和上线后的维护。服务器是相邻的一笔，判断顺序见 <a href=/knowledge/chuhai-independent-site-server/>出海独立站怎么选服务器</a>。本页结合已上线的 <a href=/cases/cavityfilter-site-build-2026-11/>康讯通独立站建站记录</a> 说明这几件事，不编造未核对的建站平台价格或收款通道费率。</p>
+<h2 id=展示站还是卖货站>展示站还是卖货站<a hidden class=anchor aria-hidden=true href=#展示站还是卖货站>#</a></h2>
+<p>先确定站点主要是展示和询价，还是要在网站上完成下单和收款。前者通常包括产品说明、规格书、联系方式和询价入口；后者还要处理购物车、库存、支付、税务显示和售后流程，维护范围更大。</p>
+<p>康讯通的 <a href="https://cavityfilter.com/" rel="noopener" target=_blank>cavityfilter.com</a> 属于展示与询价型独立站：用中英文说明产品并接收询价，页面上不承担在线收款。贸易条款在站点上写明 EXW / FOB Shenzhen。不能把这一次的结构，直接写成所有工厂都应当采用的方案。</p>
+<h2 id=域名和企业邮箱>域名和企业邮箱<a hidden class=anchor aria-hidden=true href=#域名和企业邮箱>#</a></h2>
+<p>域名宜选择与业务相符、便于海外客户记忆的名称，并以注册商当时的结算页为准。若存在常见拼写或单复数差异，可把对应域名一并注册并跳转到主站，以免客户到达其他网站。</p>
+<p>解析和邮箱可以分开选择。若要用自己的域名对外发信，需要配置相应的 MX、SPF，并视情况配置 DKIM 与 DMARC。把域名放在某一家做注册或解析，不等于已经启用了内容分发网络，也不等于邮箱已经可以发送。</p>
+<p>康讯通这次的做法是：2026-11-11（北京时间）在 Cloudflare 注册 <code>cavityfilter.com</code> 与 <code>cavityfilters.com</code>，解析放在 Cloudflare 的名称服务器，页面仍由源站直接提供；企业邮箱使用 Zoho Mail，对外地址为 <code>sales@cavityfilter.com</code>。详细时间和复核项见 <a href=/cases/cavityfilter-site-build-2026-11/>建站记录</a>。其他项目是否采用同一组合，要按自己的结算、发票和运维条件另行决定。</p>
+<h2 id=多语言与多币种>多语言与多币种<a hidden class=anchor aria-hidden=true href=#多语言与多币种>#</a></h2>
+<p>面向海外客户的独立站，至少要有一种对外使用的语言版本，并保证与中文或其他源语言在规格、价格含义和图片文字上一致。多币种结算是卖货站才必须处理的事项。没有核对过的支付通道或汇率成本，本页不写数字。</p>
+<p>康讯通站点提供英文和中文对照页面。那一次没有在网站上开通在线收款，因此本页也不把多币种收款写成该站已经完成的步骤。</p>
+<h2 id=上线后的维护>上线后的维护<a hidden class=anchor aria-hidden=true href=#上线后的维护>#</a></h2>
+<p>上线之后至少要持续核对这些事项：HTTP 是否统一跳转到 HTTPS；证书是否在有效期内；www、备用域名和直接访问服务器地址是否落到正式域名；询价或表单是否真正送达业务邮箱；产品规格是否仍与官方或工厂原稿一致；缺页是否有可用的说明页。</p>
+<p>康讯通站点在 2026-11-13（北京时间）的复核中，上述跳转和证书均已生效，询价会发送到销售邮箱。规格后续若有更正，应以站点更新和工厂原稿为准，并在该站自己的页面上说明。</p>
+<h2 id=和服务器的关系>和服务器的关系<a hidden class=anchor aria-hidden=true href=#和服务器的关系>#</a></h2>
+<p>域名、邮箱和页面结构确定之后，再按访客主要所在地选择机房和线路。不要把「已经建好独立站」理解成必须先上精品线路，也不要在没有实测的情况下，根据商家广告写速度结论。详见：</p>
+<ul>
+<li><a href=/knowledge/chuhai-independent-site-server/>出海独立站怎么选服务器</a></li>
+<li><a href=/knowledge/overseas-visitors-server/>独立站访客主要在海外时，服务器怎么选</a></li>
+<li><a href=/knowledge/domestic-visitors-cn2/>国内访客为主，独立站该不该上 CN2</a></li>
+<li><a href=/tools/server-sizing/>配置下限估算</a></li>
+</ul>
+<p>若要对已上线站点做境外访问体检，方法和结论边界见 <a href=/cases/rfkey-overseas-check-2026-11/>RF-KEY射频元器件商城海外访问实测</a>。那次测试说明：页面资源过大时，应先处理体积和 HTTPS，而不是先升级机器。它与康讯通这次的建站记录不是同一类文章。</p>
+<h2 id=常见问题>常见问题<a hidden class=anchor aria-hidden=true href=#常见问题>#</a></h2>
+<div class=faq>
+<details open><summary>Q：先买服务器，还是先定域名和站点类型？</summary><p>A：宜先确定站点是展示询价还是在线交易，并准备域名与对外邮箱，再按访客所在地选择服务器。机器只是开门面里的一笔，不能代替站点类型和联系方式。</p></details>
+<details open><summary>Q：展示站要不要做成和电商平台一样的结算流程？</summary><p>A：不是必须。若当前只需要说明产品和接收询价，可以先做成展示与询价站，把收款放在合同或另行约定的通道。若要在网站上收款，再单独核对支付、税务和售后条件。没有核对过的通道费率，本页不写。</p></details>
+<details open><summary>Q：域名和解析在同一家办理，是不是就够了？</summary><p>A：还要单独看邮箱能否用该域名发信，以及页面是否由源站或内容分发网络提供。康讯通这次是注册、解析在 Cloudflare，页面由源站直接提供，邮箱在 Zoho。这不是唯一做法。</p></details>
+<details open><summary>Q：本页为什么不列建站平台或邮箱的报价表？</summary><p>A：没有在本页引用的公开结算页上逐项核对过这些价格。按本站规则，没有核实，不下价格结论。已核对的过程写在康讯通建站记录里。</p></details>
+</div>
+<h2 id=更新日志>更新日志<a hidden class=anchor aria-hidden=true href=#更新日志>#</a></h2>
+<ul>
+<li>2026-11-13：首次发布，并以同日复核的康讯通独立站作为已核实案例。</li>
+</ul>
